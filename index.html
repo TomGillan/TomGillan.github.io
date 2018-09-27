@@ -38,44 +38,73 @@
       
       <script>
 
-        //RENDERER
-        var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'), antialias: true});
-        renderer.setClearColor(0x00ff00);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(window.innerWidth, window.innerHeight);
+    var renderer,
+    	scene,
+    	camera,
+    	myCanvas = document.getElementById('myCanvas');
 
-        //CAMERA
-        var camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 3000);
-        // var camera = new THREE.OrthographicCamera(window.innerWidth / -2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / -2, 0.1, 3000);
+    //RENDERER
+    renderer = new THREE.WebGLRenderer({
+      canvas: myCanvas, 
+      antialias: true
+    });
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-        //SCENE
-        var scene = new THREE.Scene();
+    //CAMERA
+    camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-        //LIGHTS
-        var light = new THREE.AmbientLight(0xffffff, 0.5);
-        scene.add(light);
-        
-        var light1 = new THREE.PointLight(0xffffff, 0.5);
-        scene.add(light1);
+    //SCENE
+    scene = new THREE.Scene();
 
-        //OBJECT
-        var geometry = new THREE.CubeGeometry(100, 100, 100);
-        var material = new THREE.MeshLambertMaterial({color: 0xF3FFE2});
-        var mesh = new THREE.Mesh(geometry, material);
-        mesh.position.set(0, 0, -1000);
+    //LIGHTS
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
 
+    var light2 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light2);
+  
+    //MODEL
+    var loader = new THREE.JSONLoader();
+    loader.load('untitled.json', handle_load);
+          
+    function handle_load(geometry, materials) {
+        var mesh = new THREE.Mesh(geometry, materials);
         scene.add(mesh);
+        mesh.position.z = -10;
+    }
+    
 
+    //RENDER LOOP
+    render();
 
-        //RENDER LOOP
-        requestAnimationFrame(render);
+    var delta = 0;
+    var prevTime = Date.now();
 
-        function render() {
-            mesh.rotation.x += 0.01;
+    function render() {
+
+        delta += 0.1;
+
+        if (mesh) {
+        
             mesh.rotation.y += 0.01;
-            renderer.render(scene, camera);
-            requestAnimationFrame(render);
+
+            //animation mesh
+            // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
         }
+
+        if (mixer) {
+            var time = Date.now();
+            mixer.update((time - prevTime) * 0.001);
+            prevTime = time;
+        }
+
+    	renderer.render(scene, camera);
+
+    	requestAnimationFrame(render);
+    }
+
     </script>
 
     
