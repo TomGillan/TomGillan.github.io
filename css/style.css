@@ -781,6 +781,11 @@ a {
   text-decoration: none;
 }
 
+a .selected{
+    color: #000000 !important;
+  text-decoration: none;
+}
+
 
 
 
@@ -1465,6 +1470,11 @@ xcustom form elements
     .contact{
     padding-right:8spx;
 }
+    a.selected {
+    color: #000000 !important;
+  text-decoration: none;
+}
+
   
     
     
@@ -1719,7 +1729,7 @@ xcustom form elements
     
     .cd-tab-filter a.selected {
     
-    color: #000000 ;
+    color: #000000 !important;
     /* create border bottom using box-shadow property */
     box-shadow:  10 3px 0 rgba(0,0,0,1);
    
