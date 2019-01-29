@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/mystyle.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+
+  	
+	
+</head>
+<body>
+	
+    
+    
+          
+    
+    
+
+    
+  
+    
+    <!--  navbar start-->
+   
+
+       
+ 
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+    </script>
+    
+    <!--  navbar end -->
+      
+    <script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+    </script>
+    
+    <!-- /slideshow start-->
+    
+<style>
+    .navbar-colour{
+        z-index: 19;
+        
+    }
+    
+ 
+
+#navbar {
+  font-size: 19px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+    padding-bottom: 20px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  
+}
+
+
+</style>
+    
+    
+    
+    <style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,1);
+  z-index: 20;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+        
+.menu-buttons{
+    text-align: center;
+     
+    padding: 20px;
+        }
+        
+
+</style>
+    
+    <style>
+                                .bar1 {
+                                    width: 30px;
+                                    height: 2px;
+                                    background-color: grey;
+                                    margin: 6px 0;
+                                    cursor: pointer;
+                                        }
+                        </style>
+    
+ <div class="container-fluid">
+    <div class="row" >
+        <div class=" navbar-colour" id="navbar" >
+            <div class="  TomGillanMenu">
+                <a class="tom"href="index.html">Tom Gillan</a>
+            </div>
+            
+            
+            
+            
+            
+            <div class="">
+                <div class="d-flex justify-content-end hide-desktop">
+                    <div id="overlay" onclick="off()">
+                        <div  id="text">
+                            <div class="menu-buttons row">
+                                <a class="col padding-dropdown" href="index.html">Work</a>
+                                <a class="col padding-dropdown" href="Feed.html">Feed</a>
+                                <a class="col padding-dropdown" href="about.html">About</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Burger">
+                        <span onclick="on()">
+                                <div class="bar1"></div>
+                                <div class="bar1"></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+    
+    <script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+    
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-75px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+    
+    
+  
+    
+    
+    <!-- /hero -->
+
+                            <div  class="container-fluid hidden " >
+                                <div class="row justify-content-center">
+                                   
+                                       
+                                            
+                                            <div class="hide-mobile col-12 no-padding">
+                <img src="videos/balls%20abstract%20shot.jpg" class="embed-responsive">
+            </div>
+                                   
+                                    <div class="hide-desktop col-12 no-padding bg-black"style="padding-top:255px;">
+                <img src="videos/balls%20abstract%20shotmobile.png" class="embed-responsive">
+            </div>
+                                    
+                                            
+                                        
+                                        
+                                </div>
+                               
+                            </div>
+                            
+    
+<div  class="container-fluid hidden gb-grey" style="min-height:70vh;">
+                    <div class="row  justify-content-center">
+                        <div class="hidden offset-0   col-12  descriptor-margin" style="margin:auto">
+                            <p class="col-12 col-sm-7 col-xl-6" style="margin:auto">
+                                <span class="medium"></span><span class="Light"> 
+                          Motyf is a moving typography festival coming to
+dun laoraighe, the following identity comprises
+of a unique, motion based typeface and colour
+scheme for the festival, and celebrated diversity
+and foregrounds the creative minds attending
+the event.
+<br><br>In Collaberation with David pakenham a suitable digital brand was developed using different geometric forms to create the letter M, symbolic of the symposium. This project was extended across print, screen , titles and web.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="hidden offset-0 col-12 descriptor-margin" style="margin:auto">
+                            <p class="col-12 col-sm-7 col-xl-6" style="margin:auto">
+                                <span class="Light">
+                                    <img class="no-padding col-sm-1 no-padding col-2  "src="img/alliconworkactive.svg"><img class="col-sm-1 no-padding col-2 "src="img/motioniconworkactive.svg">
+                                    <img class="col-sm-1 no-padding col-2 "src="img/screeniconwork.svg">
+                                    <img class="col-sm-1 no-padding col-2 "src="img/editorialiconwork.svg"><br>Client: Motyf<br>
+                    Collaborators: David Pakenham
+                                </span> 
+                            </p>
+                </div>
+            </div>
+         </div>
+    
+    <div class="grey-bg position-previews">
+    <div  class="container-fluid  hidden bg-black position-previews hide-mobile ">
+        <div class="row justify-content-center ">
+            <div class=" position-previews col-12 no-padding ">
+              <div class="embed-responsive embed-responsive-16by9" >
+                    <video class="" autoplay playsinline muted loop >
+                        <source src="videos/motyf/Top%20Loop%20Balls%20(Converted).mp4" style="height: 100vh; width: auto;"type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    </div>
+    
+    <div  class="container-fluid hide-desktop position-previews">
+        <div class="row justify-content-center bg-black ">
+            <div class="  col-12 no-padding bg-black ">
+                <video class="col-12 no-padding" autoplay playsinline muted loop >
+                        <source src="videos/motyf/mobile/ballmobilee.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+        
+       
+
+    <div  class="container-fluid bg-black hide-mobile ">
+        <div class="row justify-content-center bg-black ">
+            <div class="  col-12 no-padding bg-black ">
+                <video class="col-12 bg-black" autoplay playsinline muted loop >
+                        <source src="videos/motyf/Comp%202.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="container-fluid bg-black hide-desktop ">
+        <div class="row justify-content-center bg-black ">
+            <div class="  col-12 no-padding bg-black ">
+                <video class="col-12 bg-black" autoplay playsinline muted loop >
+                        <source src="videos/motyf/mobile/rect.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+        
+    <div  class="container-fluid bg-black hide-mobile">
+        <div class="row justify-content-center ">
+            <div class="  col-12 no-padding ">
+                <div class="embed-responsive embed-responsive-16by9" >
+                    <video class="" autoplay playsinline muted loop >
+                        <source src="videos/motyf/pixels.mp4" style="height: 100vh; width: auto;"type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="container-fluid bg-black hide-desktop ">
+        <div class="row justify-content-center bg-black ">
+            <div class="  col-12 no-padding bg-black ">
+                <video class="col-12 bg-black" autoplay playsinline muted loop >
+                        <source src="videos/motyf/mobile/pixelsmobile.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+
+        
+    <div  class="container-fluid   bg-black hide-mobile">
+        <div class="row justify-content-center ">
+            <div class="  col-12 no-padding ">
+                <div class="embed-responsive embed-responsive-16by9" >
+                    <video class="" autoplay playsinline muted loop >
+                        <source src="videos/motyf/loop%20test%20x.mp4" style="height: 100vh; width: auto;" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="container-fluid bg-black hide-desktop ">
+        <div class="row justify-content-center bg-black ">
+            <div class="  col-12 no-padding bg-black ">
+                <video class="col-12 bg-black" autoplay playsinline muted loop >
+                        <source src="videos/motyf/mobile/boxesmobile.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+    
+    
+
+    
+    
+         <div class="container-fluid  " style="min-height:70vh;">
+        <div class="row container-fluid  no-gutter ">
+            <div  class="container-fluid hidden gb-grey" style="min-height:70vh;">
+                    <div class="row  justify-content-center">
+                        <div class="hidden offset-0   col-12  descriptor-margin" style="margin:auto">
+                            <p class="col-12 col-sm-7 col-xl-6" style="margin:auto">
+                                <span class="medium"></span><span class="Light"> 
+                          Alongside the creation of the motyf mark there wher aslso produced a set of abstract compositions that could be used throughout the website and inbetween speakers at the symposium, extending the original visual language and boosting it across media.
+                                </span>
+                            </p>
+                        </div>
+
+                       
+            </div>
+         </div>
+            </div>
+                   </div>
+    
+  
+    
+        <div  class="container-fluid hidden   position-previews hide-mobile">
+        <div class="row justify-content-center  " id="wrapper">
+            <div class="no-padding col-sm-9 padding-30 ">
+            <div class="  col-12 no-padding hover ">
+                <div class="embed-responsive embed-responsive-16by9" >
+                    <video class="" autoplay playsinline muted loop >
+                        <source src="videos/motyf/abstract%20(Converted).mp4" style="height: 100vh; width: auto;" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="justify-content-center text-style-label" >
+                        <p class="label text">
+                            <span>Abstract extention of visual language</span>
+                        </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="container-fluid   position-previews">
+        <div class="row justify-content-center hide-desktop  ">
+            <div id="wrapper">
+                <div class="  col-12 hover  padding-30">
+                <video class="col-12 bg-black " autoplay playsinline muted loop >
+                        <source src="videos/motyf/mobile/abstractrectmobile.mp4" type="video/mp4">
+                </video>
+                </div>
+                 <div class="justify-content-center text-style-label" >
+                        <p class="label text">
+                            <span>Extention of visual language</span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+       </div>
+            
+   
+
+    
+
+    
+
+
+    
+    
+    <div  class="container-fluid hidden ">
+        <div class="row  justify-content-center position-previews">
+            
+            <div class="hidden " style="margin:auto; mix-blend-mode: multiply;">
+                
+                <video class="  offset-sm-2 col-sm-8 col-12 grub-vid" autoplay playsinline muted loop style="mix-blend-mode: multiply;">
+                    <source src="videos/motyf/ball%20(Converted).mp4" type="video/mp4">
+                </video>
+                
+             </div>
+            
+        </div>
+    </div>
+    
+    <div  class="container-fluid hidden ">
+        <div class="row  justify-content-center position-previews">
+            .<div class="hidden " style="margin:auto; mix-blend-mode: multiply;">
+                <video class="  offset-sm-2 col-sm-8 col-12 grub-vid" autoplay playsinline muted loop style="mix-blend-mode: multiply;">
+                    <source src="videos/motyf/squareweb.mp4" type="video/mp4">
+                </video>
+            
+             </div>
+        </div>
+    </div>
+                            
+                            
+                           
+                            
+                            
+                            
+                            
+                            
+                            
+                    
+                            
+               
+                        
+             <!-- cd-gallery -->
+
+      
+<div class="container-fluid position-previews">
+                <div class="col-12 row hidden" id="wrapper" style="margin-top: 100px; font-size: 16px;  margin-bottom: 100px; ">
+                    <div class="col-12 d-flex justify-content-center" style="text-align: center;">
+                        <a href="skint.html">Other projects</a>
+                    </div>
+                    
+                </div>
+                <div class="row hidden">
+                    <div class="col-12 d-flex justify-content-center">
+                       
+                    </div>
+                </div>
+    </div>
+    
+        <div class="container-fluid padding-30">
+            <div class="row justify-content-center">
+                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
+                    <a href="grub.html" class=" hover" >
+                                            
+                                            <img src="img/GrubPreviewcopy.png" class="bg-light embed-responsive">
+                                            
+                                        </a>
+                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
+                            <p class="regular text menu-mobile-sort-type  ">
+                            Grub</p>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
+                    <a href="skint.html" class="" >
+                       <img src="videos/skintmobilecopy.png" class="hover embed-responsive">
+                                            
+                    </a>
+                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
+                            <p class="regular text menu-mobile-sort-type home-lables ">
+                            Skint</p>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
+                    <a href="ChangingFutures.html" class="" >
+                                            <div class="" >
+                                                <video class="grub-vid hover embed-responsive embed-responsive-16by9"  playsinline muted loop >
+                                                        <source src="videos/changingfuturespreviewmobilecrop.mp4" type="video/mp4" class="embed-responsive">
+                                                </video> 
+                                            </div>
+                                            
+                                            
+                    </a>
+                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
+                            <p class="regular text menu-mobile-sort-type  ">
+                            Futures</p>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
+                    <a href="Archetype.html" class=" hover" >
+                                            
+                                            <img src="videos/archetypePreviewmobile.jpg" class="embed-responsive">
+                                            
+                                        </a>
+                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
+                            <p class="regular text menu-mobile-sort-type home-lables ">
+                            Archetype</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
+                    <a href="Nekrologue.html" class=" hover" >
+                                            
+                                            <img src="img/Nekrologuemobile.png" class="embed-responsive">
+                                            
+                                        </a>
+                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
+                            <p class="regular text menu-mobile-sort-type home-lables ">
+                            Nekrologue</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2 col-6 hide-desktop bottom-previews" id="wrapper">
+                    
+                    <div class="justify-content-center hide-desktop align-text-bottom text-style-preview" >
+                            <p class="menu-mobile-sort-type home-lables ">
+                            </p>
+                    </div>
+                </div>
+                
+                
+                
+                    
+              </div>
+            </div>
+          
+            
+
+
+		
+
+       <div class="container-fluid ">
+                <div class="row hidden">
+                    <div class="col-12 d-flex justify-content-center" style="margin-top: 100px; font-size: 16px;">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row hidden">
+                    <div class="col-12 d-flex justify-content-center">
+                       
+                    </div>
+                </div>
+    </div>
+    <div class="container-fluid bg-light no-padding hidden">
+            <div class="row">
+                <div class="offset-sm-2 offset-0 col-12 col-md-4 get-in-touch footer-typography" style="  margin-top: 100px;">
+                        <p>Get in touch</p>
+                </div>
+                <div class="offset-sm-1 offset-0 col-12 col-md-4 list-contact footer-typography">
+                    <a  href="" class="contact">e-mail</a>
+                     <a href="https://www.instagram.com/tomgillandesign/?hl=en" class="contact">instagram</a>
+                     <a href="https://www.behance.net/TomGillan" class="contact">behance</a>
+                     <a href="https://www.linkedin.com/in/tom-gillan-a2a329158/" class="contact">linkedin</a>
+                    
+                </div>
+               
+            </div>
+    
+        
+            
+            
+            
+            
+            
+            
+            
+            
+             <!-- cd-main-content -->
+            
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+            
+            
+    </div> 
+    
+    <!-- fade -->       
+            <script>var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= -200) {
+        elems[i].className = elems[i].className.replace(
+          'hidden',
+          'fade-in-element'
+        );
+      }
+    }
+  }
+  return {
+    init: init
+  };
+};
+                animateHTML().init();</script>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+    </div>
+
+           
+    
+</body>
+</html>
