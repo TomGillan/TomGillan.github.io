@@ -1456,6 +1456,9 @@ xcustom form elements
         padding-bottom: 280px;
     }
     
+    .contact{
+    padding-right:8spx;
+}
   
     
     
@@ -1757,9 +1760,7 @@ xcustom form elements
     margin-left: -5px;
     }
     
-.Contact {
-       margin-left: -5px; 
-    }
+
     
 .Social {
     margin-top: -35px;
