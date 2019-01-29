@@ -1,0 +1,390 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url("../font/Sailec Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'light';
+    src: url("../font/Sailec Light.otf") format("opentype");
+}
+
+.bg-black{
+    background-color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.hide-desktop{
+    display: none;
+    display: none;
+}
+.static-top{
+    z-index: 2;
+    background: blue;
+    
+}
+
+
+
+.navbar{
+    padding:0px;
+}
+
+.no-padding{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+
+.desktop-menu{
+    background-color: none;
+    font-size: 21px;
+    padding-top: 20px;
+    transition: 0.3s;  
+}
+.WorkMenu{
+    padding-right: 50px;
+}
+.FeedMenu{
+    padding-right: 50px;
+}
+.AboutMenu{
+    padding-right: 50px;
+    
+}
+
+.Burger{
+    padding-right:30px;
+    padding-top: 10px;
+}
+
+.TomGillanMenu{
+    font-family: 'regular';
+}
+
+body{
+    font-size: 21px;
+    line-height: 32px;
+    font-family:'light' ;
+    
+}
+
+.label{
+    font-size: 16px;
+    color: grey;
+    font-family:'light' ;
+    padding-top: .8vw;
+    text-align: center;
+    
+    
+}
+
+#wrapper .text {
+position:relative;
+
+left:0px;
+opacity:0;
+    transition: 0.5s;
+    bottom: 0vw;
+    
+}
+
+#wrapper:hover .text {
+opacity: 1;
+    transition: 0.5s;
+    bottom: 0vw;
+    
+}
+
+.selected .text {
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 0vw;}
+
+
+
+
+
+
+
+
+.top {
+    z-index: 2;
+}
+
+
+
+.TomGillanMenu{
+    font-size: 19px;
+    padding-top: 25px;
+    padding-left: 50px;
+    color: grey;
+    
+}
+
+#navbar a {
+    color: grey;
+}
+
+
+
+.nav{
+    z-index: 2;
+}
+
+
+.full-screen{
+    
+   position:fixed;
+    background-color: aquamarine;
+}
+
+.navbar-nav{
+    
+   
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 1);
+}
+
+.overlay-content {
+    
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25vh;
+    z-index: 3;
+    
+}
+
+.MobileMenuItem{
+    padding-top:3vh;
+    padding-bottom:3vh;
+    padding-right: 0px;
+    padding-left: 0px;
+    z-index: 20;
+    text-align: center;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: grey;
+}
+
+.overlay .closebtn {
+    transition: 0.5s;
+}
+
+.back{
+    background-color: black;
+    margin-top: -80vh;
+    
+}
+
+
+
+
+
+.about{
+   padding-left:10px; 
+}
+
+
+.about-me{
+    margin-top: 50px;
+}
+
+.details {
+    
+    max-width: 342px;
+}
+
+.small-text{
+    font-size: 17px;
+}
+
+   .margin-screen{
+    margin-top: 120vh;
+}
+
+
+@media only screen and (max-width: 992px) {
+    
+   
+    .details {
+    
+    max-width: 1000px;
+}
+    .TomGillanMenu{
+    padding-left: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .padding-mobile-feed{
+        padding-top: 160px;
+        
+    }
+    
+       .margin-screen{
+    margin-top: 100vh;
+}
+    
+
+    
+    body{
+    font-size: 19px;
+    line-height: 32px;
+    font-family:'light' ;
+    
+}
+    .hide-mobile{
+        display: none;
+    }
+    
+    .hide-desktop{
+        display: inline;
+    }
+    .hide-mobile-menu{
+        display:none;
+    }
+    
+    .TomGillanMenu{
+    
+    padding-left: 25px;
+        color: grey;
+}
+    
+    .details {
+    
+    max-width: 700px;
+}
+    
+    #wrapper .text {
+position:relative;
+opacity: 1;
+    transition: 0.5s;
+    
+    bottom: 0vw;   
+}
+
+#wrapper:hover .text {
+opacity: 1;
+    transition: 0.5s;
+    
+    bottom: 0vw;
+    
+}
+}
+
+.active {
+    color: black;
+}
+
+
+
+
+.justify-text{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    
+        body{
+    font-size: 17px;
+    line-height: 28px;
+    font-family:'light' ;
+    
+}
+    .label{
+    font-size: 14px;
+    color: grey;
+    font-family:'light' ;
+    padding-top: .8vw;
+    text-align: center;
+    
+    
+}
+}
+
+
+
+@media only screen and (min-width: 2000px) {
+   
+        
+        body{
+    font-size: 25px;
+    line-height: 42px;
+    font-family:'light' ;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
