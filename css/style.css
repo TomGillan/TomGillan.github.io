@@ -1553,7 +1553,7 @@ xcustom form elements
     
     .cd-tab-filter.selected {
     
-    color: black;
+    color: #000000 !important;
     /* create border bottom using box-shadow property */
     background-color: aqua;
     text-decoration: none;
@@ -1721,7 +1721,7 @@ xcustom form elements
     
     .cd-tab-filter a.selected {
     
-    color: #000000 !important
+    color: #000000 !important;
     /* create border bottom using box-shadow property */
     box-shadow:  10 3px 0 rgba(0,0,0,1);
    
