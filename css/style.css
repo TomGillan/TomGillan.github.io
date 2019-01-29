@@ -661,7 +661,7 @@ button:focus {
 }
 
 .Editorial-icon{
-    background-image: url(../img/motionicon.svg);
+    background-image: url(../img/editorialicon.svg);
     background-repeat: no-repeat;
     
     padding-left: 50px;
@@ -671,13 +671,13 @@ button:focus {
 }
 .Editorial-icon:hover {
     
-    background-image: url(../img/../img/motioniconhover.svg);
+    background-image: url(../img/../img/editorialiconhover.svg);
     background-repeat: no-repeat;
     transition: .5s;
 }
 
 .selected.Editorial-icon {
-    background-image: url(../img/motioniconhover.svg);
+    background-image: url(../img/editorialiconhover.svg);
     background-repeat: no-repeat;
     transition: .5s;
 }
