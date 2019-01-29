@@ -756,8 +756,11 @@ a:hover {
 
 
 .home-lables{
-    color: rgba(240,240,240);
+    
+    color: #f0f0f0 !important;
 }
+
+
 
 .container-fluid {
     background-color: rgba(240,240,240)
@@ -768,14 +771,12 @@ body {
     background-color: rgba(240,240,240)
 }
 
-
-
-
-
 a {
-  color: rgba(200,200,200);
+    color: #c8c8c8 !important;
   text-decoration: none;
 }
+
+
 
 
 /* -------------------------------- 
