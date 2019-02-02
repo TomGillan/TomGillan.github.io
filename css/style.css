@@ -1458,6 +1458,10 @@ xcustom form elements
     padding-right:15px;
 }
 
+.see-through{
+    opacity: 0;
+}
+
 
 
 @media only screen and (max-width: 600px) {
