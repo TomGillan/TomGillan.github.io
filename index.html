@@ -2,19 +2,20 @@
 <html lang="en" class="no-js">
 <head>
     <title>Tom Gillan</title>
-    <link rel=" icon" type="image/png" href="img/title.png">
+    
     
     <script>
         var favicon_images = [
                     'http://tomgillan.com/img/title.png',
-                    'http://tomgillan.com/img/title2.png',
+                    'http://tomgillan.com/img/title002-01.png',
+                 
                 ],
     image_counter = 0; // To keep track of the current image
 
 setInterval(function() {
     $("link[rel='icon']").remove();
     $("link[rel='shortcut icon']").remove();
-    $("head").append('<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/gif">');
+    $("head").append('<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/png">');
     
 	// If last image then goto first image
 	// Else go to next image    
