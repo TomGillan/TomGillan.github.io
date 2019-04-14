@@ -568,6 +568,9 @@ button:focus {
 }
 
 
+.position-previews-karoshi{
+        margin-top: 3vw;
+    }
 
 .position-previews{
         margin-top: 14vw;
@@ -1465,6 +1468,12 @@ xcustom form elements
 
 
 @media only screen and (max-width: 600px) {
+    
+    .position-previews-karoshi{
+        margin-top: 1vw;
+    }
+    
+    
     .bg-black-mobile{
         background-color: black;
     }
