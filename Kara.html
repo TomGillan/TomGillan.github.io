@@ -200,12 +200,44 @@ var currentScrollPos = window.pageYOffset;
     
     <!-- /hero -->
     
-     <div  class="container-fluid bg-black-mobile hero-vid" >
-        <div class="row justify-content-center bg-black-mobile">
-            <div class=" bg-black-mobile embed-responsive embed-responsive-16by9">
-                <video id="explainer" playsinline autoplay loop class=" bg-black-mobile embed-responsive-item " src="videos/explainervideo.mp4"></video>
-        </div>
+     <div  class="container-fluid hero-vid" >
+        <div class="row justify-content-center">
+
+            <div class="row justify-content-center col-12 bg-grey">
+                <video class=" justify-content-center explainer-video" id="myVideo"  playsinline  loop   src="videos/explainervideo.mp4" style="mix-blend-mode: multiply;">
+                </video>
+            </div>
+            
+            <div id="example" class="row  justify-content-center">
+                <span onclick="myFunction3()">
+                    <span onclick="myFunction()">
+                        <span onclick="myFunction2() ">
+                            <button id="bottom" class= " bot-right " onclick="playPause() " type="">
+                                <svg class="video-button" >
+                                </svg>
+                            </button>
+                        </span>
+                    </span>
+                </span>
+            </div>
     </div>
+         
+         <style>.video-button{
+    height: 100px;
+    width: 100px;
+}</style>
+         
+         <script> 
+var myVideo = document.getElementById("myVideo"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+</script>
     
                   <script>document.getElementById("explainer").controls = false;</script>          
                             
