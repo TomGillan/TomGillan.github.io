@@ -225,7 +225,26 @@ var currentScrollPos = window.pageYOffset;
          <style>.video-button{
     height: 100px;
     width: 100px;
-}</style>
+}
+             .bot-right {
+    position:relative;
+    transition: position 1s ;
+    transition:  right 1s ;
+    background-image: url(img/play-icon.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    bottom: 30vw;
+        z-index: 2000;
+}
+             
+             #example {
+    position: absolute;
+    
+    width: 100vw;
+    margin-left: 10vw;
+    background-color: rgba(0,0,0,0)
+}
+         </style>
          
          <script> 
 var myVideo = document.getElementById("myVideo"); 
@@ -238,6 +257,20 @@ function playPause() {
 } 
 
 </script>
+         
+            <script>
+function myFunction2() {
+   var element = document.getElementById("myVideo");
+   element.classList.toggle("explainer-video-big");
+}
+    </script>
+         
+             <script>
+function myFunction3() {
+   var element = document.getElementById("mute");
+   element.classList.toggle("show-mute");
+}
+    </script>
     
                   <script>document.getElementById("explainer").controls = false;</script>          
                             
