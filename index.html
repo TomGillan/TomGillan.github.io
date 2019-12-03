@@ -159,7 +159,7 @@ window.onscroll = function() {
                     <div id="overlay" onclick="off()">
                         <div  id="text">
                             <div class="menu-buttons row">
-                                <a  class=" col current padding-dropdown" href="index.html">Work</a>
+                                <a  class=" col current padding-dropdown" href="#work" >Work</a>
                                 <a class="col padding-dropdown" href="feed.html">Feed</a>
                                 <a class="col padding-dropdown" href="About.html">About</a>
                             </div>
@@ -290,11 +290,11 @@ var currentScrollPos = window.pageYOffset;
  
         
         
-<div class="container-fluid no-padding margin-screen " >
+<div  class="container-fluid no-padding margin-screen " >
     <div class="row">
         <div class="col-12">
                 <div class="cd-main-content">
-                    <div class="sort-menu ">
+                    <div id="work" class="sort-menu ">
                     <div class=" row cd-tab-filter-wrapper hide-on-mobile">
                         <div class="cd-tab-filter ">
                             <ul class="cd-filters row">
@@ -718,7 +718,8 @@ var currentScrollPos = window.pageYOffset;
         transition:1s;}
         .col-sm-9:hover{
             
-            max-width: 85%;
+            max-width: 90%;
+            margin-top:6vw;
             transition:ease-out 1.5s;
         }
         .col-sm-9:onclick{
@@ -726,6 +727,17 @@ var currentScrollPos = window.pageYOffset;
             max-width: 100%;
             transition-delay: 5s;
             transition: ease-out 1.5s;
+        }
+        
+        @media only screen and (max-width: 600px) {
+           .col-sm-9{
+        max-width: 80%;
+        transition:1s;}
+        .col-sm-9:hover{
+            
+            max-width: 85%;
+            transition:ease-out 0.5s;
+        } 
         }
     
     </style>

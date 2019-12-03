@@ -25,6 +25,10 @@ Primary style
 
 /*profile Page*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 
 .selected .text{
@@ -569,7 +573,7 @@ button:focus {
 
 
 .position-previews-karoshi{
-        margin-top: 4vw;
+        margin-top: 2vw;
     }
 
 .position-previews{
