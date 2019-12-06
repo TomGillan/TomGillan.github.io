@@ -160,7 +160,6 @@ html {
     background-color: #00ff00;
     color:black;}
 
-
 .topdimentions{
     width: 90vw;
     height: 100vh;
@@ -169,11 +168,13 @@ html {
     flex-wrap: wrap;
 }
 .top-left{
-    
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+}
+
+.topbar{
+    height: 10%;
 }
 
 .top1{
@@ -197,14 +198,6 @@ html {
     background-size: 100% 100%;
 }
 
-.top-right{
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-top:64px;
-}
 
 .top-first{
     background-color: red;
@@ -478,6 +471,8 @@ p{
     justify-content: center;
     align-content: center;
     background-color: white;
+    
+    height:100vh;
     width:100%;
     overflow: hidden;
 }
@@ -666,7 +661,7 @@ body {
 
 
 .scroll-area {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
     scroll-snap-stop:always;
 
 }
@@ -678,10 +673,28 @@ body {
 }
 
 
+.aboutsection{
+    height:100vh;
+}
 
+.previewlink{
+    height:100vh;
+}
 
-.rblock{height:100vh;
-min-height: 550px;}
+.howtomix{
+   height:100vh; 
+}
+
+.instructionsheight{
+    height: 100vh;
+}
+
+.enterheight{
+   height:100vh; 
+}
+
+.rblock{height:100vh;}
+
 
 
 .long{
@@ -826,26 +839,237 @@ position:absolute;
     overflow: hidden;
 }
 
+.fiftydesktop{
+    width:45%;
+}
+
 
 @media only screen and (max-width: 700px) {
     
-    .top1{
+h1{
+    font-size: 6.5vw; 
+}
+
+.h1{
+    font-size: 6.5vw;
+}
+
+.h2{
+    font-size:3.5vh;
+}
+
+p{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+}
+    
+.microtxt{
+    font-size:14px;
+    line-height: 21px;
+    width: 50%;
+    padding-left:15px;
+    display: inline-block;  
+}
+    
+.txt{
+    padding-top: 0%;
+     font-size:16px;
+    line-height: 21px; 
+}
+    
+.cameratxt{
+    position:relative;
+    top:-80px; 
+    }
+    
+.footer-text{
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right:30px;
+    height:45vh;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 104px;
+    padding-right: 104px;
+    font-size: 14px;
+    line-height: 21px;
+   cursor: pointer;
+}
+    
+    .fiftydesktop{
+        width:100%;
+    }
+    
+.uploaddownloadmobile
+    {
+      height: 200px;
+    }
+    
+    .rblock{
+        height:400px;
+    }
+    
+    .enterheight{
+        height:140vw;
+    }
+    
+    .instructionsheight{
+        height:1000px;
+    }
+    
+    .howtomix{
+        height:120vw;
+    }
+    
+    .aboutsection{
+        height:70vw;
+    }
+    
+    .previewlink{
+        height:55.8vw;
+    }
+    
+    .instrutions{
+    height: 140vw;
+    display:flex;
+    flex-wrap: wrap;
+}
+    .instruction1{
     width: 100%;
-    height: 33%;
+    height:250px;
+    background-color: yellow;
+}
+
+.instruction2{
+    width: 100%;
+    height:250px;
+    background-color: #00ffff;
+    
+}
+
+.instruction3{
+    width: 100%;
+    height:250px;
+    background-color: #f894ff;
+}
+
+.instruction4{
+    width: 100%;
+    height:250px;
+    background-color: #c9fec6;
+}
+    
+    .icon{
+    width:100px;
+    float: right;
+    padding-right: 27vw;
+    margin:auto;
+    padding-top: 0%;
+    margin-top:-25px;
+}
+    
+    .camera{
+    width:130px;
+    margin:auto;
+    padding-top: 0%;
+    
+        margin-right: 21vw;
+    margin-top:-15px;
+    }
+    
+    .music-icon{
+       float: right;
+        margin-top:18px;
+        margin-right:2vw;
+    }
+    
+    .step{
+    margin-left:0px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+    
+#video{
+    position:fixed;
+    top: 100vh;
+    z-index: 1000;
+    bottom:0vh;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    
+    height:55.8vw;
+    width:100%;
+    overflow: hidden;
+    
+    padding-right:44px;
+    padding-left:44px;
+}
+    
+
+.video1{
+  
+position: relative;
+width: 100%;
+
+    margin: auto;
+    
+}
+   
+    
+    
+
+.topdimentions{
+    width: 90vw;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-left{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.topbar{
+    height: 10%;
+}
+
+.top1{
+    width: 100%;
+    height: 30%;
     background-image: url(img/tops-01.png);
+    background-size: 100% 100%;
 }
 
 .top2{
     width: 100%;
-    height: 34%;
-    background-color: red;
+    height: 30%;
+    background-image: url(img/tops-02.png);
+    background-size: 100% 100%;
 }
 
 .top3{
     width: 100%;
-    height: 33%;
-    background-color: green;
-}
+    height: 30%;
+    background-image: url(img/tops-02.png);
+    background-size: 100% 100%;
+}    
+    
+    
+    
+    
+    
+    
+    
     
     
     .mobile-top{
@@ -860,14 +1084,7 @@ position:absolute;
     line-height: 24px;
 }
     
-    .topbar{
 
-    background-color:#7afff7;
-    width: 90vw;
-    z-index: 2000;
-    height:5vw;
-    overflow: hidden;
-}
     
 
 
