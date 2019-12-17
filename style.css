@@ -1,5 +1,6 @@
 body{
     font-family: 'Space Mono', monospace;
+    margin: 0px;
 }
 
 
@@ -12,60 +13,156 @@ html {
     scroll-snap-type: y proximity;
 }
 
-.venue{
-    background-image: url(img/airbnbinside.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.scroll-to-top{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background-color: #ff00ff;
-    bottom:0px;
-    position:absolute;
-    width: 100%;
-    height: 96px;
-    color: black;
-    
-     
-}
-.backtotop{
-/*    padding-left: 100px;*/
-}
-.right-link{
-    position:fixed;
-    z-index:4000;
-    right: 0;
+.loop{
+    white-space: nowrap;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    min-width: 55px;
-    width:5vw;
-    background-color: burlywood;
+}
+.first {
+  position :relative;
+  -webkit-animation: first 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear first 5s infinite;
+    padding:5px;
+}
+
+@keyframes first {
+  from {right: 0px;}
+  to {right: 877px;}
+}
+
+.seconed {
+  position :relative;
+  -webkit-animation: seconed 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear seconed 5s infinite;
+    padding:5px;
+}
+
+@keyframes seconed {
+  from {right: 0px;}
+  to {right: 877px;}
+}
+
+.third {
+  position :relative;
+  -webkit-animation: third 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear third 5s infinite;
+    padding:5px;
+}
+
+@keyframes third {
+  from {right: 0px;}
+  to {right: 877px;}
+}
+
+.fourth {
+  position :relative;
+  -webkit-animation: fourth 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fourth 5s infinite;
+    padding:5px;
+}
+
+@keyframes fourth {
+  from {right: 0px;}
+  to {right: 877px;}
+}
+
+.fifth {
+  position :relative;
+  -webkit-animation: fifth 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fifth 5s infinite;
+    padding:5px;
+}
+
+@keyframes fifth {
+  from {right: 0px;}
+  to {right: 629px;}
+}
+
+.sixth {
+  position :relative;
+  -webkit-animation: sixth 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear sixth 5s infinite;
+    padding:5px;
+}
+
+@keyframes sixth {
+  from {right: 0px;}
+  to {right: 629px;}
 }
 
 
+
+
+
+  
+
+@media only screen and (max-width: 800px) {
+
+    #video{
+    position:fixed;
+    top: 10vh;
+    z-index: 1000;
+    bottom:0;
+   
+    background-color: white;
+    
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+
+}
+    
+    .screenlocationsmap{
+        height:50%;
+        width:100%;
+    }
+    
+ 
+    .block1{
+        height: 20vh;
+        background-color: black;
+    }
+
+    
+    
+/*navigation*/
 .left-link {
     position:fixed;
     z-index:4000;
-    left: 0;
+    left:0;
+    
 
-    display: flex;
-
+    display: none;
     justify-content: center;
     align-items: center;
 
-
-    height: 100vh;
+    height: 1100vh;
     min-width: 55px;
     width:5vw;
-    background-color: burlywood;
+    background-color: blue;
    
 }
+.right-link{
+        position:fixed;
+    z-index:4000;
+    right:0;
+    
 
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    height: 1100vh;
+    min-width: 55px;
+    width:5vw;
+    background-color: black;
+}
 .verticaltextright {
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -73,7 +170,7 @@ html {
     -webkit-transform: rotate(90deg);
     -webkit-transform-origin:right, top;
    
-    justify-content:center;
+   justify-content:center;
     align-content: center;
     
     display: flex;
@@ -81,10 +178,10 @@ html {
     z-index:4000;
     overflow:hidden;
     min-height: 55px;
-    width: 100vh;
+    
+    width: 200vh;
     top:0;
 }
-
 .verticaltextleft {
     transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -101,12 +198,9 @@ html {
     overflow:hidden;
     min-height: 55px;
     
-    width: 100vh;
+    width: 200vh;
     top:0;
 }
-
-
-
 .top-link{
     padding-right:0vh;
     padding-left:0vh;
@@ -120,7 +214,6 @@ html {
     color: black;
     
 }
-
 .top-link2{
     padding-right:0vh;
     padding-left:0vh;
@@ -133,8 +226,520 @@ html {
     min-height:55px;
     color:white;
 }
+.top-link2:hover{
+    background-color: #00ff00;
+    color:black;}
+.top-link:hover{
+    background-color: #00ff00;
+    color:black;}
+
+.topdimentions{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+   
+}
+    
+   
 
 
+    
+ /*video*/   
+
+
+  
+.top-left{
+    width: 100vw;
+    
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top:-64px;
+}    
+
+/*  mobile-nav  */
+    
+    
+    #navbar{
+        z-index: 10000;
+        background-color: aqua;
+        height:10vh;
+        position: absolute;
+    }  
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .scroll-area {
+  scroll-snap-align: none;
+    scroll-snap-stop:always;
+
+}
+h1{
+    font-size: 6.5vw; 
+}
+
+.h1{
+    font-size: 6.5vw;
+}
+
+.h2{
+    font-size:3.5vh;
+}
+
+p{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+}
+    
+.microtxt{
+    font-size:14px;
+    line-height: 21px;
+    width: 50%;
+    padding-left:15px;
+    display: inline-block;  
+}
+    
+.txt{
+    padding-top: 0%;
+     font-size:16px;
+    line-height: 21px; 
+}
+    
+.cameratxt{
+    position:relative;
+    top:-80px; 
+    }
+    
+.footer-text{
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right:30px;
+    height:45vh;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 104px;
+    padding-right: 104px;
+    font-size: 14px;
+    line-height: 21px;
+   cursor: pointer;
+}
+    
+    .fiftydesktop{
+        width:100%;
+    }
+    
+.uploaddownloadmobile
+    {
+      height: 200px;
+    }
+    
+    .rblock{
+        height:400px;
+    }
+    
+    .enterheight{
+        height:140vw;
+    }
+    
+    .instructionsheight{
+        height:1000px;
+    }
+    
+    .howtomix{
+        height:120vw;
+    }
+    
+    .aboutsection{
+        height:70vw;
+        
+    }
+    
+    .previewlink{
+        height:55.8vw;
+    }
+    
+    .instrutions{
+    height: 140vw;
+    display:flex;
+    flex-wrap: wrap;
+}
+    .instruction1{
+    width: 100%;
+    height:250px;
+    background-color: yellow;
+}
+
+.instruction2{
+    width: 100%;
+    height:250px;
+    background-color: #00ffff;
+    
+}
+
+.instruction3{
+    width: 100%;
+    height:250px;
+    background-color: #f894ff;
+}
+
+.instruction4{
+    width: 100%;
+    height:250px;
+    background-color: #c9fec6;
+}
+    
+    .icon{
+    width:100px;
+    float: right;
+    padding-right: 27vw;
+    margin:auto;
+    padding-top: 0%;
+    margin-top:-25px;
+}
+    
+    .camera{
+    width:130px;
+    margin:auto;
+    padding-top: 0%;
+    
+        margin-right: 21vw;
+    margin-top:-15px;
+    }
+    
+    .music-icon{
+       float: right;
+        margin-top:18px;
+        margin-right:2vw;
+    }
+    
+    .step{
+    margin-left:0px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    .mobile-top{
+    
+    }
+    .map{
+    height: 50vh;
+    min-height:300px;
+}
+    p{
+    font-size: 18px;
+    line-height: 24px;
+}
+    
+
+    
+
+
+    .top-first{
+    background-color: azure;
+    width: 100%;
+        height:33%;
+        padding:0px;
+}
+.top-center1{
+    background-color: blue;
+    width: 100%;
+    height:34%;
+    padding:0px;
+    
+}
+    
+    .top-middle{
+       background-color: pink;
+    width: 33%;
+    height:34%;
+    padding:0px;  
+    }
+    .top-last1{
+    background-color: red;
+    width: 33%;
+    height:34%;
+    padding:0px;
+    
+}
+    
+
+    
+    .center{
+    margin-left:44px;
+    width: auto;
+    margin-right:44px;
+    
+
+    }
+    
+
+
+    
+    #object{
+        display:none;
+    }
+    .stick{
+        width:100%;
+        position:static;
+    }
+    
+    .hide-desktop{
+        display:inline-block;
+    }
+    
+    .footer{
+        margin-top:-100vh;
+    }
+}
+
+
+@media (min-aspect-ratio: 2440/1440) {
+    .video1{
+        top:0;
+        bottom:0;
+        position: absolute;
+        
+       
+        width: 90vw;
+        height: auto;
+        
+/*        width: 100%;*/
+    /*    max-height:90vh; */
+
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+@media (min-aspect-ratio: 2440/1440) {
+    .video1{
+        top:0;
+        bottom:0;
+        position: absolute;
+        
+        max-width: 90vw;
+        min-width: 90vw;
+        height: auto;
+        
+/*        width: 100%;*/
+    /*    max-height:90vh; */
+
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 800px){
+    
+    #left-link1 {
+    position:fixed;
+        top:0;}
+   
+    #right-link1 {
+    position:fixed;
+        top:0;}
+   
+    #Partners{
+        position:fixed;
+        bottom:-100vh;
+    }
+    
+    
+
+    #object2 {
+    position:fixed;
+    bottom:-100vh;
+    width: 45vw;
+    left:5vw;
+    z-index:5000;
+
+}
+    
+    
+    
+    
+    
+ /*navigation*/
+.left-link {
+    position:fixed;
+    z-index:10000;
+    left:0;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1100vh;
+    min-width: 55px;
+    width:5vw;
+    background-color: black;
+   
+}
+.right-link{
+    position:fixed;
+    z-index:10000;
+    right:0;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1100vh;
+    min-width: 55px;
+    width:5vw;
+    background-color: black;
+   
+}
+.verticaltextright {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin:right, top;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin:right, top;
+   
+    justify-content:center;
+    align-content: center;
+    
+    display: flex;
+    justify-content: center;
+    z-index:4000;
+    overflow:hidden;
+    min-height: 55px;
+    width: 1100vh;
+    top:0;
+}
+.verticaltextleft {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin:right, top;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:left, top;
+   
+    justify-content:center;
+    align-content: center;
+    
+    display: flex;
+    justify-content: center;
+    z-index:4000;
+    overflow:hidden;
+    min-height: 55px;
+    
+    width: 1100vh;
+    top:0;
+}
+.top-link{
+    padding-right:0vh;
+    padding-left:0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+     height:5vw;
+    min-height:55px;
+    color: black;
+    
+}
+.top-link2{
+    padding-right:0vh;
+    padding-left:0vh;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:5vw;
+    min-height:55px;
+    color:white;
+}
+.top-link2:hover{
+    background-color: #00ff00;
+    color:black;}
+.top-link:hover{
+    background-color: #00ff00;
+    color:black;}
+
+
+
+    
+    /*  topbarslide  */
+    
+    
+    .topbar{
+    position: absolute;
+    height: 10vh;
+    top:0;
+    z-index:1000;
+    background-color: beige;
+        cursor:default;
+    
+}
+    
+
+    
+ /*video*/   
+#video{
+    position:fixed;
+    top: 10vh;
+    z-index: 1000;
+    bottom:0;
+
+    background-color: white;
+    
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+    
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+  
+
+    
 .top-left{
     width: 90vw;
     
@@ -143,37 +748,62 @@ html {
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-top:-64px;
+}    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+
+.scroll-to-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: #ff00ff;
+    bottom:0px;
+    position:absolute;
+    width: 100%;
+    height: 96px;
+    color: black;
+    
+     
+}  
+.venue{
+    background-image: url(img/airbnbinside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.backtotop{
+/*    padding-left: 100px;*/
 }
 
-.top-link2:hover{
-    background-color: #00ff00;
-    color:black;}
 
-.top-link:hover{
-    background-color: #00ff00;
-    color:black;}
 
-.topdimentions{
-    width: 90vw;
-    height: 100vh;
-    margin:auto;
-}
-.top-left{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.topbar{
-    height: 10%;
-}
 
+/*
 .top1{
     width: 100%;
     height: 90vh;
     background-image: url(img/tops-01.png);
     background-size: 100% 100%;
 }
+*/
 
 
 
@@ -216,14 +846,6 @@ a{
 
 
 
-@keyframes slide {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -100%;
-  }
-}
 
 .left-link a{
     text-decoration: none;
@@ -331,10 +953,7 @@ p{
     
 }
 
-.videobg{
-    background-color: #00ff00;
-    
-}
+
 
 .maps-link{
    font-size: 21px;
@@ -439,34 +1058,7 @@ p{
 }
 
 
-#video{
-    position:fixed;
-    top: 100vh;
-    z-index: 1000;
-    bottom:0vh;
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: white;
-    
-    height:100vh;
-    width:100%;
-    overflow: hidden;
-}
 
-.video1{
-  
-position: relative;
-/*
-left: 50%;
-transform: translate(-50%);
-*/
-
-min-height: 100%;
-    margin: auto;
-    
-}
 
 #About{
     
@@ -486,12 +1078,7 @@ min-height: 100%;
 .lightblue{
     background-color: #7afff7;
 }
-.loop{
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
+
 
 .orange{
     background-color:#ffaa00;
@@ -503,78 +1090,6 @@ min-height: 100%;
     justify-content: center;
     align-content: center;
     height: 100vh;
-}
-
-.first {
-  position :relative;
-  -webkit-animation: first 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear first 5s infinite;
-    padding:5px;
-}
-
-@keyframes first {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.seconed {
-  position :relative;
-  -webkit-animation: seconed 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear seconed 5s infinite;
-    padding:5px;
-}
-
-@keyframes seconed {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.third {
-  position :relative;
-  -webkit-animation: third 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear third 5s infinite;
-    padding:5px;
-}
-
-@keyframes third {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.fourth {
-  position :relative;
-  -webkit-animation: fourth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear fourth 5s infinite;
-    padding:5px;
-}
-
-@keyframes fourth {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.fifth {
-  position :relative;
-  -webkit-animation: fifth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear fifth 5s infinite;
-    padding:5px;
-}
-
-@keyframes fifth {
-  from {right: 0px;}
-  to {right: 629px;}
-}
-
-.sixth {
-  position :relative;
-  -webkit-animation: sixth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear sixth 5s infinite;
-    padding:5px;
-}
-
-@keyframes sixth {
-  from {right: 0px;}
-  to {right: 629px;}
 }
 
 
@@ -612,8 +1127,9 @@ body {
 
 .center{
     margin-left:5vw;
-    
+    margin-top:24px;
     width:45vw;
+    margin-top: 0px;
     
 }
 
@@ -622,6 +1138,7 @@ body {
     bottom:100vh;
     left:50vw;
     width: 45vw;
+    background-color: lightgrey;
     
     
     
@@ -713,7 +1230,7 @@ body {
     height:100vh;
     max-height:100vh;
     overflow: hidden;
-    z-index:6000; 
+    z-index:10000; 
 }
 .footer-text{
     color: white;
@@ -820,289 +1337,6 @@ position:absolute;
 .fiftydesktop{
     width:45%;
 }
-
-
-@media only screen and (max-width: 600px) {
-    
-h1{
-    font-size: 6.5vw; 
 }
 
-.h1{
-    font-size: 6.5vw;
-}
 
-.h2{
-    font-size:3.5vh;
-}
-
-p{
-    font-size: 1.5vw;
-    line-height: 2.2vw;
-}
-    
-.microtxt{
-    font-size:14px;
-    line-height: 21px;
-    width: 50%;
-    padding-left:15px;
-    display: inline-block;  
-}
-    
-.txt{
-    padding-top: 0%;
-     font-size:16px;
-    line-height: 21px; 
-}
-    
-.cameratxt{
-    position:relative;
-    top:-80px; 
-    }
-    
-.footer-text{
-    color: white;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-right:30px;
-    height:45vh;
-}
-
-.footer-links{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    padding-left: 104px;
-    padding-right: 104px;
-    font-size: 14px;
-    line-height: 21px;
-   cursor: pointer;
-}
-    
-    .fiftydesktop{
-        width:100%;
-    }
-    
-.uploaddownloadmobile
-    {
-      height: 200px;
-    }
-    
-    .rblock{
-        height:400px;
-    }
-    
-    .enterheight{
-        height:140vw;
-    }
-    
-    .instructionsheight{
-        height:1000px;
-    }
-    
-    .howtomix{
-        height:120vw;
-    }
-    
-    .aboutsection{
-        height:70vw;
-    }
-    
-    .previewlink{
-        height:55.8vw;
-    }
-    
-    .instrutions{
-    height: 140vw;
-    display:flex;
-    flex-wrap: wrap;
-}
-    .instruction1{
-    width: 100%;
-    height:250px;
-    background-color: yellow;
-}
-
-.instruction2{
-    width: 100%;
-    height:250px;
-    background-color: #00ffff;
-    
-}
-
-.instruction3{
-    width: 100%;
-    height:250px;
-    background-color: #f894ff;
-}
-
-.instruction4{
-    width: 100%;
-    height:250px;
-    background-color: #c9fec6;
-}
-    
-    .icon{
-    width:100px;
-    float: right;
-    padding-right: 27vw;
-    margin:auto;
-    padding-top: 0%;
-    margin-top:-25px;
-}
-    
-    .camera{
-    width:130px;
-    margin:auto;
-    padding-top: 0%;
-    
-        margin-right: 21vw;
-    margin-top:-15px;
-    }
-    
-    .music-icon{
-       float: right;
-        margin-top:18px;
-        margin-right:2vw;
-    }
-    
-    .step{
-    margin-left:0px;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-    
-#video{
-    position:fixed;
-    top: 100vh;
-    z-index: 1000;
-    bottom:0vh;
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: red;
-    
-    height:55.8vw;
-    width:100%;
-    overflow: hidden;
-    
-    padding-right:44px;
-    padding-left:44px;
-}
-    
-
-.video1{
-  
-position: relative;
-width: 100%;
-
-    margin: auto;
-    
-}
-   
-    
-    
-
-.topdimentions{
-    width: 90vw;
-    height: 100vh;
-    margin:auto;
-}
-.top-left{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.topbar{
-    height: 10%;
-}
-
-.top1{
-    width: 100%;
-    height: 90vh;
-    background-image: url(img/tops-01.png);
-    background-size: 100% 100%;
-}
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .mobile-top{
-    
-    }
-    .map{
-    height: 50vh;
-    min-height:300px;
-}
-    p{
-    font-size: 18px;
-    line-height: 24px;
-}
-    
-
-    
-
-
-    .top-first{
-    background-color: azure;
-    width: 100%;
-        height:33%;
-        padding:0px;
-}
-.top-center1{
-    background-color: blue;
-    width: 100%;
-    height:34%;
-    padding:0px;
-    
-}
-    
-    .top-middle{
-       background-color: pink;
-    width: 33%;
-    height:34%;
-    padding:0px;  
-    }
-    .top-last1{
-    background-color: red;
-    width: 33%;
-    height:34%;
-    padding:0px;
-    
-}
-    
-
-    
-    .center{
-    margin-left:44px;
-    width: auto;
-        margin-right:44px;
-}
-    
-
-
-    
-    #object{
-        display:none;
-    }
-    .stick{
-        width:100%;
-        position:static;
-    }
-    
-    .hide-desktop{
-        display:inline-block;
-    }
-    
-    .footer{
-        margin-top:-100vh;
-    }
-}
