@@ -24,10 +24,10 @@ var numbloack = 11;
 
 //partners
     $(window).scroll(function () {
-        var numbloack = 9;
+        var numbloack = 8;
 
         var scroll_position = $(window).scrollTop();
-        var maxscroll = (window.innerHeight)*numbloack;
+        var maxscroll = ((window.innerHeight)*numbloack);
         
         var object_position_left =  scroll_position - (9*(window.innerHeight));
         var pos = - object_position_left ;
@@ -131,7 +131,7 @@ var numbloack = 11;
 
 
 
-
+//legalmodal
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -143,18 +143,100 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
+
+
+
+
+
+//disclaimermodal
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "flex";
+}
+
+
+
+
+
+
+//terms and conditions modal
+// Get the modal
+var modal3 = document.getElementById("myModal3");
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+  modal3.style.display = "flex";
+}
+
+
+
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
 }
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+
+
+
+
+    $(window).scroll(function(){
+    if ($(window).scrollTop() >= (0.9*(window.innerHeight))) {
+        $('nav').addClass('stuck');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('stuck');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+
+
+
+
+
+//mobilemenu
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+
+
+
+
 
