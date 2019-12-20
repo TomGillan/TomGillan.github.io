@@ -730,7 +730,7 @@ overflow-x: scroll;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
 }
     
 
@@ -957,7 +957,7 @@ overflow-x: scroll;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
 }
     
 
@@ -1437,6 +1437,7 @@ p{
     margin-left:3vw;
     margin-right:3vw;
     margin-bottom:3vw;
+    height:25vh;
 }
 
 .instruction2{
@@ -1445,7 +1446,8 @@ p{
     background-color: white;
     margin-left:3vw;
     margin-right:3vw;
-    margin-bottom:3vw;   
+    margin-bottom:3vw;
+    height:25vh;
 }
 
 .instruction3{
@@ -1455,6 +1457,7 @@ p{
     margin-left:3vw;
     margin-right:3vw;
     margin-bottom:3vw;
+    height:25vh;
 }
 
 .instruction4{
@@ -1683,7 +1686,7 @@ p{
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
       
       
 
@@ -1801,7 +1804,7 @@ p{
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
       
       
 
@@ -1919,7 +1922,7 @@ p{
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
       
       
 
