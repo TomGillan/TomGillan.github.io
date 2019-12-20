@@ -313,6 +313,11 @@ overflow-x: scroll;
 
 @media only screen and (max-width: 800px) {
     
+        .countdown{
+        height:100vw;
+        background-color: aqua;
+    }
+    
         .arrowmobileyellow{
     display: none;
     height: 40%;
@@ -389,6 +394,7 @@ overflow-x: scroll;
 }
     
 .icon{
+    min-width: 20vw;
     max-width: 20vw;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -538,6 +544,7 @@ overflow-x: scroll;
     color: black;
 }
 
+
 .speakerlink:hover{
     color: yellow;
 }
@@ -644,6 +651,14 @@ overflow-x: scroll;
     margin-right:3.5vw;
     width: 93vw;
 }
+    
+    .treasuremap{
+    height:50vh;
+    margin-left: 3.5vw;
+    margin-right:3.5vw;
+    width: 93vw; 
+    background-color:rgba(240,240,240,1);
+    }
     
     .sponsor1{
     mix-blend-mode: multiply;
@@ -1371,6 +1386,12 @@ p{
     line-height: 21px;
 }
     
+.txt2{
+    font-size:14px;
+    line-height: 21px;
+    padding-bottom: 40px;
+}
+    
 .desc{
       margin-top: 5px;  
     }
@@ -1416,8 +1437,6 @@ p{
     margin-left:3vw;
     margin-right:3vw;
     margin-bottom:3vw;
-    height:40vw;
-    max-height:33vh;
 }
 
 .instruction2{
@@ -1426,9 +1445,7 @@ p{
     background-color: white;
     margin-left:3vw;
     margin-right:3vw;
-    margin-bottom:3vw;
-    height:40vw;
-    max-height:33vh;
+    margin-bottom:3vw;   
 }
 
 .instruction3{
@@ -1438,8 +1455,6 @@ p{
     margin-left:3vw;
     margin-right:3vw;
     margin-bottom:3vw;
-    height:40vw;
-    max-height:33vh;
 }
 
 .instruction4{
@@ -1473,7 +1488,7 @@ p{
     }
     .map{
 
-    height: 50vh;
+/*    height: 50vh;*/
     min-height:300px;
     margin-left: 3.5vw;
         margin-left: 3.5vw;
@@ -1571,6 +1586,28 @@ p{
 
 
 @media only screen and (min-width: 800px){
+    
+    .instruction1{
+    width: 100%;
+    display:flex;
+    background-color: yellow;
+}
+        .instruction2{
+    width: 100%;
+    display:flex;
+    background-color: greenyellow;
+}
+            .instruction3{
+    width: 100%;
+    display:flex;
+    background-color: red;
+}
+
+    
+    .countdown{
+        height:80vh;
+        background-color: aqua;
+    }
     
             .arrowmobileyellow{
     display: none;
@@ -2197,6 +2234,12 @@ font-size: 3.5vw;
     background-image: url(img/airbnbinside.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height:60vh;
+}
+    
+    .treasuremap{
+    height:60vh;
+    background-color:rgba(240,240,240,1);
 }
     
 .bottombar{
@@ -2323,9 +2366,13 @@ p{
 }
 
 .icon{
-    width: 40%;
-    margin:auto;
-    padding-top: 5%;
+    min-width: 10vw;
+    max-width: 10vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background:rgba(0,0,0,0.1);
 }
 
 .camera{
@@ -2339,14 +2386,20 @@ p{
      font-size:1.2vw;
     line-height: 1.8vw; 
 }
+    
+    .txt2{
+    font-size:1.2vw;
+    line-height: 1.8vw;
+}
+
 
 .uploaddownload{
-    height: 100vh;
+    height: 20vh;
 }
 
 .download{
-    height:50%;
-    width:94.8%;
+    height:20vh;
+    width:94.6%;
     background-color: yellow;
     padding-top:5px;
     padding-left:35px;
@@ -2357,7 +2410,7 @@ p{
 }
 
 .upload{
-    height:50%;
+    height:20vh;
     width:94.8%;
     background-color: #f894ff;
     padding-top:5px;
@@ -2367,6 +2420,7 @@ p{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 
 .sponsor1{
     mix-blend-mode: multiply;
@@ -2458,30 +2512,6 @@ p{
     display:flex;
     flex-wrap: wrap;
 }
-.instruction1{
-    width: 50%;
-    height:50%;
-    background-color: yellow;
-}
-
-.instruction2{
-    width: 50%;
-    height:50%;
-    background-color: #00ffff;
-    
-}
-
-.instruction3{
-    width: 50%;
-    height:50%;
-    background-color: #f894ff;
-}
-
-.instruction4{
-    width: 50%;
-    height:50%;
-    background-color: #c9fec6;
-}
 
 .viddesktop{
     height:100vh;
@@ -2495,9 +2525,10 @@ p{
     background-color: #00ff00;
 }
 .step{
-    padding-left: 35px;
-    padding-right: 35px;
-}
+    margin-top:-11px;
+    padding-left:3.5vw;
+    padding-right:3.5vw;
+    }
 
 
 
@@ -2529,7 +2560,7 @@ p{
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    height: 40vh;
 }
 
 
@@ -2621,7 +2652,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .enterheight{
-   height:100vh; 
+   height:80vh; 
 }
 
 .rblock{
