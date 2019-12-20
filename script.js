@@ -207,9 +207,6 @@ span3.onclick = function() {
 }
 
 
-
-
-
     $(window).scroll(function(){
     if ($(window).scrollTop() >= (0.9*(window.innerHeight))) {
         $('nav').addClass('stuck');
@@ -221,21 +218,28 @@ span3.onclick = function() {
     }
 });
 
+ document.getElementById("myNav").style.display = "none";
+
+$( document ).ready(function() {
+  var hamburger = $('#nav');
+  var nav = $('#myNav');
+  hamburger.click(function() {
+      
+    nav.toggle();
+    hamburger.toggleClass('active');
+    return false;
+      
+  });
+});
+
+
+ 
 
 
 
-
-
-//mobilemenu
-function openNav() {
-  document.getElementById("myNav").style.display = "block";
-}
-
-/* Close */
 function closeNav() {
   document.getElementById("myNav").style.display = "none";
 }
-
 
 
 
