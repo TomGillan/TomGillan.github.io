@@ -3,11 +3,33 @@ body{
     margin: 0px;
 }
 
+  a.anchor_offset {
+    
+    position: relative;
+    top: -10vh;
+    visibility: hidden; }
+
+
+.black{
+    color: black;
+}
+
 body { 
     background: black;
     margin:0;
     cursor: default;
 }
+
+    .lightpink{
+        background-color: #f894ff;
+    }
+
+.playsoundmobile{
+    position:absolute;
+    margin:auto;
+    z-index: 10000000px;
+}
+    
 
 .lightgreen{
    background-color: #c9fec6; 
@@ -102,9 +124,12 @@ a{
     text-decoration: none;
 }
 
+.lightblue{
+    background-color: #7afff7;
+}
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
     transition: scroll-behavior 5s;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -117,77 +142,6 @@ html {
     overflow: hidden;
     display: flex;
     align-items: center;
-}
-.first {
-  position :relative;
-  -webkit-animation: first 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear first 5s infinite;
-    padding:5px;
-}
-
-@keyframes first {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.seconed {
-  position :relative;
-  -webkit-animation: seconed 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear seconed 5s infinite;
-    padding:5px;
-}
-
-@keyframes seconed {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.third {
-  position :relative;
-  -webkit-animation: third 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear third 5s infinite;
-    padding:5px;
-}
-
-@keyframes third {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.fourth {
-  position :relative;
-  -webkit-animation: fourth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear fourth 5s infinite;
-    padding:5px;
-}
-
-@keyframes fourth {
-  from {right: 0px;}
-  to {right: 877px;}
-}
-
-.fifth {
-  position :relative;
-  -webkit-animation: fifth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear fifth 5s infinite;
-    padding:5px;
-}
-
-@keyframes fifth {
-  from {right: 0px;}
-  to {right: 629px;}
-}
-
-.sixth {
-  position :relative;
-  -webkit-animation: sixth 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: linear sixth 5s infinite;
-    padding:5px;
-}
-
-@keyframes sixth {
-  from {right: 0px;}
-  to {right: 629px;}
 }
 
 
@@ -262,32 +216,7 @@ overflow-x: scroll;
     display: none;
     
 }
-  .card1 {
-
-    display: inline-block;
-    background-color: #f894ff;
-    width: 80vw;
-    max-width: 400px;
-    margin-left: 3.5vw;
-       padding-bottom: 20px;
-  }
-
-  .card2 {
-    display: inline-block;
-    background-color: #f894ff;
-    width: 80vw;
-    max-width: 400px;
-       padding-bottom: 20px;
-  }
-
-  .card3 {
-    display: inline-block;
-    background-color: #f894ff;
-    width: 80vw;
-    max-width: 400px;
-    margin-right: 3.5vw;
-      padding-bottom: 20px;
-  }
+  
 
 
 
@@ -312,6 +241,114 @@ overflow-x: scroll;
 
 
 @media only screen and (max-width: 800px) {
+    
+   
+.first {
+  position :relative;
+  -webkit-animation: first 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear first 10s infinite;
+    
+}
+
+@keyframes first {
+  from {right: 0px;}
+  to {right: 333vw;}
+}
+
+.seconed {
+  position :relative;
+  -webkit-animation: seconed 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear seconed 10s infinite;
+   
+}
+
+@keyframes seconed {
+  from {right: 0px;}
+  to {right: 333vw;}
+}
+
+.third {
+  position :relative;
+  -webkit-animation: third 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear third 10s infinite;
+ 
+}
+
+@keyframes third {
+  from {right: 0px;}
+  to {right: 333vw;}
+}
+
+.fourth {
+  position :relative;
+  -webkit-animation: fourth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fourth 10s infinite;
+
+}
+
+@keyframes fourth {
+  from {right: 0px;}
+  to {right: 333vw;}
+}
+
+.fifth {
+  position :relative;
+  -webkit-animation: fifth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fifth 10s infinite;
+
+}
+
+@keyframes fifth {
+  from {right: 0px;}
+  to {right: 333vw;}
+}
+
+.sixth {
+  position :relative;
+  -webkit-animation: sixth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear sixth 10s infinite;
+ 
+}
+
+@keyframes sixth {
+  from {right: 0px;}
+  to {right: 333vw;}
+} 
+    
+  a.anchor_offset {
+    
+    position: relative;
+    top: -10vh;
+    visibility: hidden; }
+    
+    .card1 {
+
+    display: inline-block;
+    
+    width: 80vw;
+    max-width: 400px;
+    margin-left: 3.5vw;
+       padding-bottom: 20px;
+  }
+
+  .card2 {
+    display: inline-block;
+    
+    width: 80vw;
+    max-width: 400px;
+       padding-bottom: 20px;
+  }
+
+  .card3 {
+    display: inline-block;
+    
+    width: 80vw;
+    max-width: 400px;
+    margin-right: 3.5vw;
+      padding-bottom: 20px;
+  }
+    
+
     
         .countdown{
         height:100vw;
@@ -570,6 +607,12 @@ overflow-x: scroll;
     max-width: 400px;
     
 }
+        .preplaylistimage{
+    width: 80vw;
+    max-width: 400px;
+            height: 80vw;
+    max-height: 400px;
+}
     
 
     
@@ -728,7 +771,7 @@ overflow-x: scroll;
   width: 90%;
   
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0.0s;
   animation-name: animatetop;
   animation-duration: 0s
 }
@@ -788,8 +831,8 @@ overflow-x: scroll;
 
 .modal-body {
   margin-top: 14vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 4.3vw;
+  padding-right:4.3vw;
     
   height:80vh;
   overflow-y:scroll;
@@ -843,9 +886,9 @@ overflow-x: scroll;
   width: 90%;
   
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0s;
   animation-name: animatetop;
-  animation-duration: 0.2s
+  animation-duration: 0s
 }
     
 
@@ -902,8 +945,8 @@ overflow-x: scroll;
 
 .modal-body2 {
   margin-top: 14vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 4.3vw;
+  padding-right:4.3vw;
     
   height:80vh;
   overflow-y:scroll;
@@ -955,7 +998,7 @@ overflow-x: scroll;
   width: 90%;
   
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0s;
   animation-name: animatetop;
   animation-duration: 0s
 }
@@ -1016,8 +1059,8 @@ overflow-x: scroll;
 
 .modal-body3 {
   margin-top: 14vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 4.3vw;
+  padding-right:4.3vw;
     
   height:80vh;
   overflow-y:scroll;
@@ -1042,6 +1085,122 @@ overflow-x: scroll;
 
 
 }
+   
+    
+       
+/* terms and conditions modal   */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 120000; /* Sit on top */
+  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 2px solid black;
+  width: 90%;
+  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0s;
+  animation-name: animatetop;
+  animation-duration: 0s
+}
+    
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {transform: scale(0); opacity:0} 
+  to {transform: scale(1); opacity:1}
+}
+
+@keyframes animatetop {
+  from {transform: scale(0.5); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+
+/* The Close Button */
+.close4 {
+  color: black;
+  font-size: 10vw;
+  font-weight:100;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header4 {
+  background-color: white;
+  border-bottom: 2px solid black;
+  color: black;
+  height: 14vw;
+  position:fixed;
+  width: 82%;
+  padding-left: 4vw;
+  padding-right:4vw;
+    
+
+}
+    
+.modalclose4{
+  margin-top:0vw;
+  float:right;
+    }
+    
+.modalheading4{
+  font-size: 5.5vw; 
+  margin: 0px;
+  line-height: 10vw;
+  margin-top:2.5vw;
+  float:left;
+    }
+    
+
+
+.modal-body4 {
+  margin-top: 14vw;
+  padding-left: 4.3vw;
+  padding-right:4.3vw;
+    
+  height:80vh;
+  overflow-y:scroll;
+  overflow-x: hidden;
+    }
+
+
+.modal-body4::-webkit-scrollbar {
+  
+   
+}
+ 
+.modal-body4::-webkit-scrollbar-track {
+    background-color: white;
+    box-shadow: inset 2px 2px 0px white;
+  
+}
+ 
+.modal-body4::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: solid white 2px;
+
+
+}
+   
     
     
     
@@ -1429,6 +1588,7 @@ p{
 .instrutions{
     display:flex;
     flex-wrap: wrap;
+    
 }
 .instruction1{
     width: 100%;
@@ -1590,20 +1750,113 @@ p{
 
 @media only screen and (min-width: 800px){
     
+    
+.first {
+  position :relative;
+  -webkit-animation: first 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear first 10s infinite;
+    
+}
+
+@keyframes first {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+
+.seconed {
+  position :relative;
+  -webkit-animation: seconed 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear seconed 10s infinite;
+   
+}
+
+@keyframes seconed {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+
+.third {
+  position :relative;
+  -webkit-animation: third 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear third 10s infinite;
+ 
+}
+
+@keyframes third {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+
+.fourth {
+  position :relative;
+  -webkit-animation: fourth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fourth 10s infinite;
+
+}
+
+@keyframes fourth {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+
+.fifth {
+  position :relative;
+  -webkit-animation: fifth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear fifth 10s infinite;
+
+}
+
+@keyframes fifth {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+
+.sixth {
+  position :relative;
+  -webkit-animation: sixth 0s infinite; /* Safari 4.0 - 8.0 */
+  animation: linear sixth 10s infinite;
+ 
+}
+
+@keyframes sixth {
+  from {right: 0px;}
+  to {right: 118vw;}
+}
+    
+      a.anchor_offset {
+    display: block;
+    position: relative;
+    top: -0vh;
+    visibility: hidden; }
+    
+    .card1 {
+    height:100%;
+    display: inline-block;
+    width: 100%;
+  }
+    
     .instruction1{
     width: 100%;
     display:flex;
-    background-color: yellow;
+/*    background-color:white;*/
+    border-radius: 0vw;
+    min-height:33%;
+    border-bottom: 2px solid black;
 }
         .instruction2{
     width: 100%;
     display:flex;
-    background-color: greenyellow;
+/*    background-color:white;*/
+    border-radius: 0vw;
+    min-height:33%;
+    border-bottom: 2px solid black;
 }
             .instruction3{
     width: 100%;
     display:flex;
-    background-color: red;
+/*    background-color:white;*/
+    border-radius: 0vw;
+    min-height:33%;
 }
 
     
@@ -1684,7 +1937,7 @@ p{
   
     
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0s;
   animation-name: animatetop;
   animation-duration: 0s
       
@@ -1747,8 +2000,8 @@ p{
 
 .modal-body {
   margin-top: 7vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 2.5vw;
+  padding-right:2.5vw;
     
   height:68vh;
   overflow-y:scroll;
@@ -1802,7 +2055,7 @@ p{
   
     
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0s;
   animation-name: animatetop;
   animation-duration: 0s
       
@@ -1865,8 +2118,8 @@ p{
 
 .modal-body2 {
   margin-top: 7vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 2.5vw;
+  padding-right:2.5vw;
     
   height:68vh;
   overflow-y:scroll;
@@ -1920,7 +2173,7 @@ p{
   
     
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0s;
   animation-name: animatetop;
   animation-duration: 0s
       
@@ -1982,8 +2235,8 @@ font-size: 3.5vw;
 
 .modal-body3 {
   margin-top: 7vw;
-  padding-left: 2vw;
-  padding-right:2vw;
+  padding-left: 2.5vw;
+  padding-right:2.5vw;
     
   height:68vh;
   overflow-y:scroll;
@@ -2008,7 +2261,123 @@ font-size: 3.5vw;
 
 
 }
+    
+    
+/* The Modal (background) */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 2px solid black;
+  width: 80%;
+  
+    
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0s;
+  animation-name: animatetop;
+  animation-duration: 0s
+      
+      
+
+}
+    
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {transform: scale(0); opacity:0} 
+  to {transform: scale(1); opacity:1}
+}
+
+@keyframes animatetop {
+  from {transform: scale(0.5); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+
+/* The Close Button */
+.close4 {
+  color: black;
+  font-size: 3.5vw;
+  font-weight:100;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header4 {
+  background-color: white;
+  border-bottom: 2px solid black;
+  color: black;
+  height: 7vw;
+  position:fixed;
+  width: 76%;
+  padding-left: 2vw;
+  padding-right:2vw;
+    
+
+}
+    
+.modalclose4{
+  margin-top:1vw;
+  float:right;
+    }
+    
+.modalheading4{
+font-size: 3.5vw;
+  margin-top:1vw;
+    float:left;
+    }
+    
+
+
+.modal-body4 {
+  margin-top: 7vw;
+  padding-left: 2.5vw;
+  padding-right:2.5vw;
+    
+  height:68vh;
+  overflow-y:scroll;
+  overflow-x: hidden;
+    }
+
+
+.modal-body4::-webkit-scrollbar {
+  
    
+}
+ 
+.modal-body4::-webkit-scrollbar-track {
+    background-color: white;
+    box-shadow: inset 2px 2px 0px white;
+  
+}
+ 
+.modal-body4::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: solid white 2px;
+
+
+}
+   
+    
     
     
     
@@ -2369,13 +2738,12 @@ p{
 }
 
 .icon{
-    min-width: 10vw;
-    max-width: 10vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background:rgba(0,0,0,0.1);
+    max-width: 9vw;
+    max-width: 9vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vw;
 }
 
 .camera{
@@ -2385,8 +2753,8 @@ p{
 }
 
 .txt{
-    padding-top: 12%;
-     font-size:1.2vw;
+    margin-top:-1vw;
+    font-size:1.2vw;
     line-height: 1.8vw; 
 }
     
@@ -2395,14 +2763,17 @@ p{
     line-height: 1.8vw;
 }
 
+    .subhead{
+        font-weight: bold;
+    }
 
 .uploaddownload{
-    height: 20vh;
+    display: flex;
 }
 
 .download{
     height:20vh;
-    width:94.6%;
+    width:45%;
     background-color: yellow;
     padding-top:5px;
     padding-left:35px;
@@ -2414,7 +2785,7 @@ p{
 
 .upload{
     height:20vh;
-    width:94.8%;
+    width:45%;
     background-color: #f894ff;
     padding-top:5px;
     padding-left:35px;
@@ -2478,6 +2849,10 @@ p{
     min-height:200px;
 }
     
+    .playlistpadding{
+    height: 100vh;
+}
+    
     .panelcontent{
     
     padding-top:5px;
@@ -2513,6 +2888,7 @@ p{
 .instrutions{
     height: 100vh;
     display:flex;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -2528,7 +2904,6 @@ p{
     background-color: #00ff00;
 }
 .step{
-    margin-top:-11px;
     padding-left:3.5vw;
     padding-right:3.5vw;
     }
@@ -2549,9 +2924,6 @@ p{
     min-height:500px;
 }
 
-.lightblue{
-    background-color: #7afff7;
-}
 
 
 .orange{
@@ -2585,7 +2957,13 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
+    stick2{
+    position:sticky;
+    top:0px;
+    width: 45vw;
+    height:200vh;
+        
+    }
 
 
 .stick{
@@ -2653,9 +3031,14 @@ body::-webkit-scrollbar-thumb {
 .instructionsheight{
     height: 100vh;
 }
+.instructions{
+    background-color: #f894ff;
+    }  
+    
+
 
 .enterheight{
-   height:80vh; 
+   height:100vh; 
 }
 
 .rblock{
@@ -2668,10 +3051,6 @@ body::-webkit-scrollbar-thumb {
     height:100vh;
 }
 
-.blue{
-    height:100vh;
-    
-}
 
 .lawngreen{
     background-color:lawngreen;
@@ -2776,6 +3155,14 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     height: 60%;
     width: 100%;
+    max-width:45vw;
+}
+    
+.preplaylistimage{
+    display:flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
 }
 
 .grey{
@@ -2789,7 +3176,8 @@ body::-webkit-scrollbar-thumb {
 .portrait3{
     height: 100%;
     max-height: 45vw;
-    width: auto;
+    max-width:45vw;
+    
     align-self: flex-end;
 }
 

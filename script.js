@@ -7,7 +7,7 @@ var numbloack = 11;
 
 
     $(window).scroll(function () {
-        var numbloack = 9;
+        var numbloack = 11;
 
         var scroll_position = $(window).scrollTop();
         var maxscroll = (window.innerHeight)*numbloack;
@@ -29,7 +29,7 @@ var numbloack = 11;
         var scroll_position = $(window).scrollTop();
         var maxscroll = ((window.innerHeight)*numbloack);
         
-        var object_position_left =  scroll_position - (9*(window.innerHeight));
+        var object_position_left =  scroll_position - (11*(window.innerHeight));
         var pos = - object_position_left ;
         
         if (scroll_position < maxscroll){ 
@@ -185,7 +185,20 @@ btn3.onclick = function() {
   modal3.style.display = "flex";
 }
 
+//terms and conditions modal
+// Get the modal
+var modal4 = document.getElementById("myModal4");
 
+// Get the button that opens the modal
+var btn4 = document.getElementById("myBtn4");
+
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close4")[0];
+
+// When the user clicks the button, open the modal 
+btn4.onclick = function() {
+  modal4.style.display = "flex";
+}
 
 
 
@@ -205,6 +218,12 @@ span2.onclick = function() {
 span3.onclick = function() {
   modal3.style.display = "none";
 }
+
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
 
 
     $(window).scroll(function(){
@@ -243,4 +262,40 @@ function closeNav() {
 
 
 
+
+
+
+
+var video = document.getElementById('videoclick');
+var videoMuted = true;
+var videoPlaying = false;
+video.style.cursor = 'url(img/sound.png), default';
+
+
+
+
+
+video.onclick = function() {
+    if (videoMuted) {
+        video.muted = false;
+        video.style.cursor = 'url(img/play.png), default';
+    }
+    else {
+        video.muted = true;
+        videoMuted = true;
+        video.style.cursor = 'url(img/pause.png), default';
+    }
+    
+    if (videoPlaying) {
+        video.pause();
+        videoPlaying = false;
+        
+        video.style.cursor = 'url(img/play.png), default';
+    }
+    else {
+        video.play();
+        return videoPlaying = true;
+        video.style.cursor = 'url(img/pause.png), default';
+    }
+}
 
