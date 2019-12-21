@@ -276,26 +276,27 @@ video.style.cursor = 'url(img/sound.png), default';
 
 
 video.onclick = function() {
-    if (videoMuted) {
+    
+    
+    if ( videoPlaying) {
+        video.pause();
+        videoPlaying = false;
         video.muted = false;
         video.style.cursor = 'url(img/play.png), default';
     }
     else {
-        video.muted = true;
-        videoMuted = true;
-        video.style.cursor = 'url(img/pause.png), default';
-    }
-    
-    if (videoPlaying) {
-        video.pause();
-        videoPlaying = false;
-        
-        video.style.cursor = 'url(img/play.png), default';
-    }
-    else {
         video.play();
-        return videoPlaying = true;
+        videoPlaying = true;
+        video.muted = false;
         video.style.cursor = 'url(img/pause.png), default';
-    }
+    };
+    
+//   if (videoPlaying) {
+//        video.pause();
+//        videoPlaying = false;
+//        
+//        video.style.cursor = 'url(img/pause.png), default';
+//    };
+
 }
 
