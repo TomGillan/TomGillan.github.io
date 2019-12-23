@@ -304,6 +304,7 @@ var play = document.getElementById('playbutton');
 var video2 = document.getElementById('videoclick2');
 var video2Muted = true;
 var video2Playing = true;
+play.style.opacity='0';
 
 play.onclick = function() {
     
@@ -312,7 +313,8 @@ play.onclick = function() {
         video.pause();
         videoPlaying = false;
         videoPlaying = false;
-        play.innerHTML= '<img   class="play" src="img/play.png">';
+        play.innerHTML= '<div   class="play" >PLAY</div>';
+        play.style.opacity='1';
         play.style.fontWeight='100';
     }
     else {
@@ -321,6 +323,7 @@ play.onclick = function() {
         videoPlaying = true;
         videoPlaying = true;
         play.innerHTML= '<img   class="play" src="img/pause.png">';
+        play.style.opacity='0';
         play.style.fontWeight='100';
     };
 }
