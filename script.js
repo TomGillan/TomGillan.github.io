@@ -11,6 +11,7 @@ var numbloack = 11;
 
         var scroll_position = $(window).scrollTop();
         var maxscroll = (window.innerHeight)*numbloack;
+        var minscroll = (window.innerHeight);
         
         var object_position_left =  scroll_position - (0*(window.innerHeight));
         var pos = - object_position_left ;
@@ -18,7 +19,7 @@ var numbloack = 11;
         if (scroll_position < maxscroll){ 
         $('#object').css({
             'bottom': pos });
-            return(pos);} return(pos);
+            return(pos);}
     } );
 
 
@@ -268,35 +269,78 @@ function closeNav() {
 
 var video = document.getElementById('videoclick');
 var videoMuted = true;
-var videoPlaying = false;
+var videoPlaying = true;
 video.style.cursor = 'url(img/sound.png), default';
-
-
-
-
 
 video.onclick = function() {
     
-    
     if ( videoPlaying) {
         video.pause();
+        video.pause();
+        videoPlaying = false;
         videoPlaying = false;
         video.muted = false;
         video.style.cursor = 'url(img/play.png), default';
+        play.innerHTML= '<img   class="play" src="img/play.png">';
+        play.style.fontWeight='bold';
+        soundbutton.innerHTML= '<img   class="sound" src="img/mute.png">';
+soundbutton.style.fontWeight='100';
+        
     }
     else {
         video.play();
+        video.play();
+        videoPlaying = true;
         videoPlaying = true;
         video.muted = false;
         video.style.cursor = 'url(img/pause.png), default';
+        play.innerHTML= '<img   class="play" src="img/play.png">';
+        play.style.fontWeight='100';
     };
-    
-//   if (videoPlaying) {
-//        video.pause();
-//        videoPlaying = false;
-//        
-//        video.style.cursor = 'url(img/pause.png), default';
-//    };
-
 }
+
+var soundbutton = document.getElementById('soundbutton');
+var play = document.getElementById('playbutton');
+var video2 = document.getElementById('videoclick2');
+var video2Muted = true;
+var video2Playing = true;
+
+play.onclick = function() {
+    
+    if ( videoPlaying) {
+        video.pause();
+        video.pause();
+        videoPlaying = false;
+        videoPlaying = false;
+        play.innerHTML= '<img   class="play" src="img/play.png">';
+        play.style.fontWeight='100';
+    }
+    else {
+        video.play();
+        video.play();
+        videoPlaying = true;
+        videoPlaying = true;
+        play.innerHTML= '<img   class="play" src="img/pause.png">';
+        play.style.fontWeight='100';
+    };
+}
+
+soundbutton.onclick = function() {
+    
+    if ( videoMuted) {
+        
+        videoMuted = false;
+        video.muted = false;
+        soundbutton.innerHTML= '<img   class="sound" src="img/mute.png">';
+soundbutton.style.fontWeight='100';
+    }
+    else {
+        
+        videoMuted = true;
+        video.muted = true;
+        soundbutton.innerHTML= '<img   class="sound" src="img/sound.png">';
+        soundbutton.style.fontWeight='100';
+    };
+};
+
 
