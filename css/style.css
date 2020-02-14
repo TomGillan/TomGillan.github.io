@@ -56,7 +56,7 @@ button img  {
     opacity:0.2;
 }
 
-
+.testme{min-height: 620px;}
 
 p {
 	display: block;
@@ -1282,7 +1282,11 @@ width:calc(50vw-40px);
     #nextproject{
     width: calc(65vw + 30px);
     }
+    
+    .testme{min-height: 520px;}
 }
+
+
 
 
 @media only screen and (max-width: 600px) {
