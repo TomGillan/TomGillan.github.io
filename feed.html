@@ -1,474 +1,153 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
+<title>Tom Gillan</title>
 <head>
-    <title>Tom Gillan</title>
-    <link rel="shortcut icon" type="image/png" href="img/title.png">
     
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/uoy8qex.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel= "stylesheet" href= "css/style.css" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="css/mystyle.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-    
-
-  	
-	
+     <link rel="stylesheet" href="css/animate.css">
 </head>
-<body>
-	
-    
-    
-          
-    
-    
-
-    
   
+<body data-instant-intensity="mousedown-only">
     
-    <!--  navbar start-->
-   
-
-       
- 
     
-    <script>
-    function openNav() {
-      document.getElementById("myNav").style.display = "block";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
-    </script>
-    
-    <!--  navbar end -->
-      
-    <script>
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-    </script>
-    
-    <!-- /slideshow start-->
-    
-<style>
-    .navbar-colour{
-        z-index: 19;
+    <navbar id="navbar">
+     <div id="navbarbg" style="background-color: #1a1a1a; height: 65px; width: 100vw; top:0px; position: fixed; z-index:2;"></div>   
         
-    }
+    <nav id="nav" style="z-index: 2;" class="animated ">
+    <a  class="underline active nav-link " href="index.html">Work</a>
+    <a  class="underline nav-link" href="feed.html">Feed</a>
+    <a  class="underline nav-link" href="profile.html">Profile</a> 
     
- 
-
-#navbar {
-  font-size: 19px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
-    padding-bottom: 20px;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  
-}
-
-
-</style>
-    
-    
-    
-    <style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,1);
-  z-index: 20;
-  cursor: pointer;
-}
-
-#text{
-  
-    top: 45%;
-    left: 50%;
-    color: white;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-        
-
-        
-
-</style>
-    
-    <style>
-                                .bar1 {
-                                    width: 30px;
-                                    height: 2px;
-                                    background-color: grey;
-                                    margin: 6px 0;
-                                    cursor: pointer;
-                                        }
-                        </style>
-    
- <div class="container-fluid">
-    <div class="row" >
-        <div class=" navbar-colour" id="navbar" >
-            <div class="  TomGillanMenu">
-                <a class="tom"href="index.html">Tom Gillan</a>
-            </div>
-            
-            
-            
-            
-            
-            <div class="">
-                <div class="d-flex justify-content-end hide-desktop">
-                    <div id="overlay" onclick="off()">
-                        <div  id="text">
-                            <div class="menu-buttons row">
-                                <a class="col padding-dropdown" href="index.html">Work</a>
-                                <a class="col padding-dropdown" href="feed.html">Feed</a>
-                                <a class="col padding-dropdown" href="About.html">About</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Burger">
-                        <span onclick="on()">
-                                <div class="bar1"></div>
-                                <div class="bar1"></div>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            
-            
-
-            
+    </nav>
+    <div  class="topsection">
+        <div id="header"><span style="width:100vw; height:50px; background-color: red; display:inline;" class="hide-desktop"></span>
+            <span id="name" class="name">Feed </span><span id="hide" class="fade darktext">of one of projects<br> and visual exploration.
+            </span>
         </div>
     </div>
+         
+    </navbar>
+    
+    <div class="topblock"style=" display:flex; align-items: flex-end;" >
+    
+    
+    </div>
+     
+<!--    bio description-->
+
+    
+     <div  class=" left split ">
+         <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/practice2%20(Converted).mp4" type="video/mp4">
+            </video>
+        </div>
+ 
+        <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/Feed1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
+    <div  class=" left split ">
+         <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/video-1579171149.mp4" type="video/mp4">
+            </video>
+        </div>
+ 
+        <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/video-1574191054.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    
+    
+    
+    <div  class=" left split ">
+         <div class="padding-image vert-spacing half" style="display:flex; align-content: flex-start; align-self: flex-start;">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/video-1578680511.mp4" type="video/mp4">
+            </video>
+        </div>
+ 
+        <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/softbodyballs.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
+    <div  class="animated left split slideInUp">
+         <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/feed6.mp4" type="video/mp4">
+            </video>
+        </div>
+ 
+        <div class="padding-image vert-spacing half">
+            <video  style="width:100%;"  autoplay muted loop name="media">
+                    <source src="img/Feed/feed%202.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
+    <div  class="left split slideInUp">
+        <div class="half vert-spacing padding-image">
+            <img  class="posterfeed" src="img/Feed/Poster-Iadt-Output.jpg">
+        </div>
+        <div class="half vert-spacing padding-image">
+            <img  class="posterfeed" src="img/Feed/yellowposter.jpg">
+        </div>
+
+    </div>
+    
+    <div  class="left split slideInUp">
+        <div class="half vert-spacing padding-image">
+            <img  class="posterfeed" src="img/Feed/future-poster.jpg">
+        </div>
+        <div class="half vert-spacing padding-image">
+            <img  class="posterfeed" src="img/Feed/motyfproposal.jpg">
+        </div>
+    </div>
+
+    
+    
+    
+<div class=" hrblackprofile nextprojecttopbar" style="margin-left:0px; margin-top:90px; "></div>
+
+ <a rel="PRECONNECT" href="javascript:delay('Kara.html')" class="next-project"  >        
+<div id="nextproject">
+    <div class="hide-desktop3" style="width:100vw; height:20px;"></div>
+    <p class="nextp">Next Project</p>
+      Kara healthcare <span class="white">is a speculative design that reimagines how future tech could revolutionise how we interact with healthcare.
+    </span> 
+<!--
+  
+-->
 </div>
-    
-    <script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
-    
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-75px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
-    
-    
-  
-    
-    
-    
-    <!-- /hero -->
-
-                            
-                            
-    
-         <div class="container-fluid  " style="min-height:70vh;">
-        <div class="row container-fluid  no-gutter ">
-            <div  class="container-fluid hidden gb-grey" style="min-height:70vh;">
-                    <div class="row  justify-content-center position-previews">
-                        <div class="hidden offset-0   col-12  descriptor-margin" style="margin:auto">
-                            <p class="col-12 col-sm-7 col-xl-6" style="margin:auto">
-                                <span class="medium"></span><span class="Light"> 
-                        Constant experimentation and testing is an important part of the working process. Here you'll find experiments, tests and everything else that either didn’t make it into the final project, or just was meant to live as a stand alone piece.
-                                </span>
-                            </p>
-                        </div>
-
-                       
-            </div>
-         </div>
-            </div>
-                   </div>
-    
-    <div class="grey-bg">
-    <div  class="container-fluid row ">
-        
-        
-        
-        
-        <div class=" embed-responsive embed-responsive-16by9  padding-mobile-feed" >
-            <video class="hidden  col-sm-4 offset-0 col-12 offset-sm-6" autoplay playsinline muted loop >
-                <source src="feed/fadeletters.mp4" type="video/mp4">
-            </video>
-        </div>
-    
-        
-        <div class=" embed-responsive embed-responsive-16by9 padding-mobile-feed" >
-            <video class="hidden  col-sm-4 col-12 offset-sm-3" autoplay playsinline muted loop >
-                <source src="feed/softbodyballs.mp4" type="video/mp4">
-            </video>
-        </div>
-        
-        <div class=" embed-responsive embed-responsive-16by9  padding-mobile-feed" >
-            <video class="hidden  col-sm-4 col-12 offset-sm-1" autoplay playsinline muted loop >
-                <source src="feed/Feed1.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class=" padding-mobile-feed embed-responsive embed-responsive-16by9" >
-            <video class="hidden  col-sm-4 col-12 offset-sm-6" autoplay playsinline muted loop >
-                <source src="feed/feed%202.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class=" padding-mobile-feed embed-responsive embed-responsive-16by9" >
-            <video class="hidden  col-sm-4 col-12 offset-0 offset-sm-3" autoplay playsinline muted loop >
-                <source src="feed/feed6.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class=" padding-mobile-feed embed-responsive embed-responsive-16by9" >
-            <video style="mix-blend-mode: multiply;" class="hidden  col-sm-5 col-12 offset-sm-3" autoplay playsinline muted loop >
-                <source src="feed/feed3.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class=" padding-mobile-feed embed-responsive embed-responsive-16by9" >
-            <video style="mix-blend-mode: multiply;" class="hidden  col-sm-4 col-12 offset-sm-4" autoplay playsinline muted loop >
-                <source src="feed/feed4.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class=" padding-mobile-feed embed-responsive embed-responsive-16by9" >
-            <video style="mix-blend-mode: multiply;" class="hidden  col-sm-5 col-12 offset-sm-1" autoplay playsinline muted loop >
-                <source src="feed/feed5.mp4" type="video/mp4">
-            </video>
-        </div>
-        
+    <div  class="insidenext-project">
+        <img  class="img-grid" src="img/kara-watchheader.png">
     </div>
-    </div>
+</a>
     
- 
-    
-                       
-                            
-                            
-                    
-                            
-               
-                        
-    <div class="container-fluid position-previews">
-                <div class="col-12 row hidden" id="wrapper" style="margin-top: 100px; font-size: 16px;  margin-bottom: 100px; ">
-                    <div class="col-12 d-flex justify-content-center" style="text-align: center;">
-                        <a href="skint.html">Other projects</a>
-                    </div>
-                    
-                </div>
-                <div class="row hidden">
-                    <div class="col-12 d-flex justify-content-center">
-                       
-                    </div>
-                </div>
-    </div>
-    
-        <div class="container-fluid padding-30">
-            <div class="row justify-content-center">
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="grub.html" class=" hover" >
-                                            
-                                            <img src="img/GrubPreviewcopy.png" class="bg-light embed-responsive">
-                                            
-                                        </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regular text menu-mobile-sort-type ">
-                            Grub</p>
-                    </div>
-                </div>
-                
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="skint.html" class="" >
-                       <img src="videos/skintmobilecopy.png" class="hover embed-responsive">
-                                            
-                    </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regular text menu-mobile-sort-type home-lables ">
-                            Skint</p>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="changingfutures.html" class="" >
-                                            <div class="" >
-                                                <video class="grub-vid hover embed-responsive embed-responsive-16by9"  playsinline muted loop >
-                                                        <source src="videos/changingfuturespreviewmobilecrop.mp4" type="video/mp4" class="embed-responsive">
-                                                </video> 
-                                            </div>
-                                            
-                                            
-                    </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regular text menu-mobile-sort-type  ">
-                            Futures</p>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="Archetype.html" class=" hover" >
-                                            
-                                            <img src="videos/archetypePreviewmobile.jpg" class="embed-responsive">
-                                            
-                                        </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regular text menu-mobile-sort-type home-lables ">
-                            Archetype</p>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="motyf.html" class=" hover" >
-                                            
-                                            <img src="videos/balls%20abstract%20shotmobile.png" class="embed-responsive">
-                                            
-                                        </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regular text menu-mobile-sort-type home-lables ">
-                            Motyf2018</p>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-6 bottom-previews" id="wrapper">
-                    <a href="Nekrologue.html" class=" hover" >
-                                            
-                                            <img src="img/Nekrologuemobile.png" class="embed-responsive">
-                                            
-                                        </a>
-                    <div class="justify-content-center align-text-bottom text-style-preview-bottom" >
-                            <p class="regulartext menu-mobile-sort-type home-lables ">
-                            Karoshi</p>
-                    </div>
-                </div>
-                
-                
-                
-                
-                
-                    
-              </div>
-            </div>
-          
-            
 
 
-		
+<script src="script/script.js"></script>   
 
-    <div class="container-fluid bg-light no-padding hidden position-previews">
-            <div class="row">
-                <div class="footer-typography offset-sm-2 offset-0 col-12 col-md-4 get-in-touch" style="opacity:0.4; font-size: 16px; margin-top: 100px;">
-                        <p>Get in touch</p>
-                </div>
-                <div class="footer-typography offset-sm-1 offset-0 col-12 col-md-4 list-contact ">
-                    <a  href="mailto:tomgillandesign@gmail.com" class="contact">e-mail</a>
-                     <a href="https://www.instagram.com/tomgillandesign/?hl=en" class="contact">instagram</a>
-                     <a href="https://www.behance.net/TomGillan" class="contact">behance</a>
-                     <a href="https://www.linkedin.com/in/tom-gillan-a2a329158/" class="contact">linkedin</a>
-                    
-                </div>
-               
-            </div>
-    
-        
-            
-            
-            
-            
-            
-            
-            
-            
-             <!-- cd-main-content -->
-            
-
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mixitup.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-
-            
-            
-    </div> 
-    
-    <!-- fade -->       
-            <script>var animateHTML = function() {
-  var elems;
-  var windowHeight;
-  function init() {
-    elems = document.querySelectorAll('.hidden');
-    windowHeight = window.innerHeight;
-    addEventHandlers();
-    checkPosition();
-  }
-  function addEventHandlers() {
-    window.addEventListener('scroll', checkPosition);
-    window.addEventListener('resize', init);
-  }
-  function checkPosition() {
-    for (var i = 0; i < elems.length; i++) {
-      var positionFromTop = elems[i].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight <= -200) {
-        elems[i].className = elems[i].className.replace(
-          'hidden',
-          'fade-in-element'
-        );
-      }
-    }
-  }
-  return {
-    init: init
-  };
-};
-                animateHTML().init();</script>
-    <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-    
-    </div>
-
-           
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     
 </body>
+    
 </html>

@@ -1,748 +1,191 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
+<title>Tom Gillan</title>
 <head>
-    <title>Tom Gillan</title>
-    <link rel="shortcut icon" type="image/png" href="img/title.png" style="mix-blend-mode: multiply;">
     
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    
-    
-    
-    
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="css/mystyle.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-    
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init();
-</script>
-  
-    
-    
-    
-<meta name="description" content="An extensive visual thinker and a team player, delivering moving considered design across print, screen and environments. Driven by the desire to create and produce functional beauty through user-centred problem solving. I am constantly upskilling in a quest for limitless creativity.">
-       <meta name="keywords" content="illustration, concept building, branding, copywriting, spacial design, editorial design, signage, wayfinding, exhibition design, web development, social media, photography, art direction, video, motion design, packaging design, graphic, designer, iadt, graduate, dublin">
-
-  	
-	
+    <link rel= "stylesheet" href= "css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
 </head>
+    
 <body>
-	
     
-   <!--  navbar start-->
+    
+    <navbar id="navbar">
+     <div style="background-color: #1a1a1a; height: 65px; width: 100vw; top:0px; position: fixed; z-index:2;"></div>   
+
+        
+    <nav id="nav" style="z-index: 2;" >
+    <a  class="underline active nav-link " href="#showreel">Work</a>
+    <a  class="underline nav-link" href="feed.html">Feed</a>
+    <a  class="underline nav-link" href="profile.html">Profile</a> 
+    
+    </nav>
+    <div  class="topsection">
+        <div id="header"><span style="width:100vw; height:50px; background-color: red; display:inline;" class="hide-desktop"></span>
+
+            <span id="name" class="name">Tom Gillan</span><span id="hide" class="fade"> is an Irish designer creating experiences that intersect motion, graphic, and<span style="visibility: hidden;">.</span>digital design.
+            </span><span id="underline projectTitle" class="white"></span><span id="projectTitle"></span></div> 
+    </div>
+        
+    </navbar>
+    
+    <div style="min-height: 620px;"></div>
+     
+<!--    bio description-->
    
-
-       
-
+     <div id="showreel" class="animated slideInUp showreel ">
+<!--
+        <div class="label-block tagsshowreel">
+            <span class="label ">Play</span>
+        </div>
+-->
+        
+        <div onmouseover=showreel() onmouseout=normal()>
+             <video  style="width:100%;"  muted autoplay loop  name="media">
+                    <source src="img/reelprototype.mp4" type="video/mp4">
+            </video>
+        </div>
+         
+    </div>
+    <div id="grid">
     
-    <script>
-    function openNav() {
-      document.getElementById("myNav").style.display = "block";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
-    </script>
     
-    <!--  navbar end -->
+<div class="row1">
+    <a href="skint.html"id="tall" style="">
+        <div onmouseover=skint() onmouseout=normal() class="insidetall img1">
+            <div class="label-block tags1">
+                <span class="label ">Film titles</span>
+            </div>
+            <img  class="img-grid" src="img/placeholder3.jpg">
+        </div>
+    </a>
+  <div id="big" >
       
-    <script>
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-    </script>
+      <a href="kara.html" onmouseover=kara() onmouseout=normal() class="insidebig img2">
+        <div class="label-block tags2">
+            <span class="label ">Reimagine healthcare</span>
+        </div>     
+        <img style="
+            object-fit: cover; min-width: 100%; min-height:100%; max-width: 100%; max-height:100%;"src="img/placeholder4.png">
+      </a>
+    </div>
+</div>
     
-    <!-- /slideshow start-->
-    
-<style>
-    .navbar-colour{
-        z-index: 19;
-        
-    }
-    
- 
 
-#navbar {
-  font-size: 19px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
-    padding-bottom: 20px;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  
-}
-
-
-</style>
-    
-    
-    
-    <style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,1);
-  z-index: 20;
-  cursor: pointer;
-}
-
-#text{
-  
-    top: 45%;
-    left: 50%;
-    color: white;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-        
-
-        
-
-</style>
-    
-    <style>
-                                .bar1 {
-                                    width: 30px;
-                                    height: 2px;
-                                    background-color: grey;
-                                    margin: 6px 0;
-                                    cursor: pointer;
-                                        }
-                        </style>
-    
- <div class="container-fluid">
-    <div class="row" >
-        <div class=" navbar-colour" id="navbar" >
-            <div class="  TomGillanMenu">
-                <a class="tom"href="index.html">Tom Gillan</a>
+    <div class="row2">
+  <a href="LoyalGenie.html" id="small" style="margin-right: 20px;" >
+      <div onmouseover=Genie() onmouseout=normal() class="insidesmall img3">
+      <div class="label-block tags3">
+            <span class="label ">Explainer video</span>
+        </div>
+      <img style="
+            object-fit: cover; min-width: 100%; min-height:100%; max-height:100%; max-width:100%;"src="img/placeholder3.png">
+      </div>
+  </a>
+  <a href="Karoshi.html" id="small" style="margin-right: 20px;">
+      <div onmouseover=Karoshi() onmouseout=normal() class="insidesmall img4">
+      <div class="label-block tags4">
+            <span class="label ">ISTD submission</span>
+        </div>
+      <img style="object-fit: cover; min-width: 100%; min-height:100%; max-height:100%; max-width:100%;"src="img/placeholder5.png">
+    </div>
+  </a>
+        <a href="Grub.html" id="tall">
+            <div onmouseover=grub() onmouseout=normal() class="insidesmall img5">
+                <div class="label-block tags5">
+                    <span class="label ">Food App</span>
+                </div>
+            <img style="object-fit: cover; min-width: 100%; min-height:100%; max-height:100%; max-width:100%;"src="img/placeholder6.png">
             </div>
-            
-            
-            
-            
-            
-            <div class="">
-                <div class="d-flex justify-content-end hide-desktop">
-                    <div id="overlay" onclick="off()">
-                        <div  id="text">
-                            <div class="menu-buttons row">
-                                <a  class=" col current padding-dropdown" href="#work" >Work</a>
-                                <a class="col padding-dropdown" href="feed.html">Feed</a>
-                                <a class="col padding-dropdown" href="About.html">About</a>
-                            </div>
+        </a>
+    </div>
+
+
+    <div class="row3">
+    <a href="motyf.html"id="big" style="">
+      
+      <div onmouseover=motyf() onmouseout=normal() class="insidebig img6">
+                <div class="label-block tags6">
+                    <span class="label ">Titles and motion production</span>
+                </div>
+        <img class="img-grid" src="img/placeholdermotyf.png">
+      </div>
+    </a>
+    <div id="small" class="hide-mobile" ><div  class="hide-mobile insidetall " style="visibility:hidden;"></div></div>
+    </div>
+        
+    <div class="row4">
+          <div id="small" class="hide-mobile" style="margin-right: 20px; visibility:hidden;">
+
+          </div>
+          <div id="small" class="hide-mobile" style="margin-right: 20px; visibility:hidden;">
+
+          </div>
+            <a href="changingfutures.html" id="small" >
+                <div onmouseover=changingfutures() onmouseout=normal() class="insidesmall img7">
+                        <div class="label-block tags7">
+                            <span class="label ">Website</span>
                         </div>
-                    </div>
-                    <div class="Burger">
-                        <span onclick="on()">
-                                <div class="bar1"></div>
-                                <div class="bar1"></div>
-                        </span>
-                    </div>
+                    <img style="
+                    object-fit: cover; min-width: 100%; min-height:100%; max-height:100%; max-width:100%;"src="img/placeholder8.png">
                 </div>
-            </div>
-            
-            
-
-            
-        </div>
-    </div>
+            </a>
 </div>
     
-    <script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
-    
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-75px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
-    
-    
+     <div class="row5">
   
-    
-    
-    <!-- /video  --> 
-<div class="container-fluid hide-mobile bg-grey" >
-        <div class="row  bg-grey">
-            <div class="col-12 d-flex no-padding  bg-grey" style="mix-blend-mode: multiply;">
-    <video style=" width:100vw !important; top: 0 !important;   position:absolute !important; mix-blend-mode: multiply;" class="desktop-version tablet-version visible  bg-grey" src="videos/showreel%20(Converted).mp4" playsinline autoplay loop muted   >
-                </video>
-            </div>
+<a href="Banished.html" id="small" style="">
+    <div onmouseover=Banished() onmouseout=normal() class="insidetall img8">
+        <div class="label-block tags8">
+            <span class="label ">Opera Poster</span>
         </div>
+        <img style="
+            object-fit: cover; width: 100%; height: 100%;"src="img/Banished.jpg">
+    </div>
+</a>
+  <a href="Feed.html"id="big" style="">
+      
+      <div onmouseover=feed() onmouseout=normal() class="insidebig img9">
+        <div class="label-block tags9">
+            <span class="label ">One-offs and tests</span>
+        </div>     
+        <img class="img-grid"src="img/placeholdershowreelmenu.png">
+      </div>
+
+    </a>
+    </div>
+
+
+    <div class="row6">
+  <div id="small" style="margin-right: 20px;">
+      <div onmouseover=templebar() onmouseout=normal() class="insidesmall img10">
+      <div class="label-block tags10">
+            <span class="label ">Coming soon</span>
+      </div>
+        <img style="
+            object-fit: cover; min-width: 100%; min-height:100%; max-height:100%; max-width:100%;"src="img/placeholdertemplebar.png">
+      </div>
+  </div>
+  <div id="small" class="hide-mobile" style="margin-right: 20px; visibility: hidden;"></div>
+  <div id="small" style=" visibility: hidden;"></div>
+    </div>
+
+    
+  </div>
+    <div class="bottombar">
+    <p style="color:white;"></p> 
 </div>
-
-
     
 
-    
-<div class="container-fluid hide-desktop bg-grey" >
-        <div class="row">
-            <div class="col-12 d-flex no-padding ">
-    <video class="mobile-version tablet-version visible" src="videos/showreelmobile%20(Converted).mp4" playsinline autoplay loop muted  style=" width:100vw;  margin-bottom: -24vw; top: 0; position:absolute; mix-blend-mode: multiply;" ></video>
-            </div>
-        </div>
-</div>
-    
-  
-    
-
-           
-        
-        
-
-    
-    
-    
-    
-    
-    
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-        
-        
-<div  class="container-fluid no-padding margin-screen " >
-    <div class="row">
-        <div class="col-12">
-                <div class="cd-main-content">
-                    <div id="work" class="sort-menu ">
-                    <div class=" row cd-tab-filter-wrapper hide-on-mobile">
-                        <div class="cd-tab-filter ">
-                            <ul class="cd-filters row">
-                                <li class="placeholder"> 
-                                    <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-                                </li> 
-                                <li class="filter col sort-menu-mobile no-padding"><a id="wrapper" class="selected All-icon" href="#0" data-type="all"><span class="transparent "></span><p class="inline  ">All</p><span class="transparent"></span></a>
-                                </li>
-                                
-                                <li class="filter col sort-menu-mobile no-padding" data-filter=".Screen ">
-                                <a id="wrapper" class=" Screen-icon" href="#0" data-type="Screen"><p class="inline ">Screen</p></a></li>
-                                
-                                 <li class="filter col sort-menu-mobile no-padding" data-filter=".Motion">
-                                <a id="wrapper" class="Motion-icon" href="#0" data-type="Motion"><span class="transparent"></span><p class="inline ">Motion</p><span class="transparent"></span></a></li>
-                                
-                                <li class="filter col sort-menu-mobile no-padding" data-filter=".Editorial">
-                                <a id="wrapper" class="Editorial-icon" href="#0" data-type="Editorial"><span class="transparent"></span><p class="inline ">Editorial</p><span class="transparent"></span></a></li>
-                                
-                                
-                            </ul> <!-- cd-filters -->
-                        </div> <!-- cd-tab-filter -->
-                    </div> <!-- cd-tab-filter-wrapper -->
-                    </div>
-
-                    <section class="  cd-gallery margin-top-project-previews">
-                        <div class="">
-                        <ul>
-                            
-                        <div  class="container-fluid  ">
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Motion radio2 option6 col-sm-9 col-12">
-                                        <div id="wrapper">
-                                        <a href="motyf.html" class="hide-mobile hover">
-                                            
-                                            <div class=" col-12 no-padding">
-                <img src="videos/balls%20abstract%20shot.jpg" class="embed-responsive">
-            </div>
-                                            
-                                        </a>
-                                        
-                                        <a href="motyf.html" class="hide-desktop hover" >
-                                            
-                                            <img src="videos/balls%20abstract%20shotmobile.png" class="embed-responsive">
-                                            
-                                        </a>
-                                        
-                                        
-                                        
-                                        <div class="justify-content-center align-text-bottom text-style-preview" style="">
-                                                
-                                            <p class="text menu-mobile-sort-type home-lables regular"><span>Motyf2018</span>
-                                                <br>
-                                                <span>Motion based branding</span></p></div>
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            
-                            <div  class="container-fluid no-padding ">
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Screen radio2 option2 col-sm-9 col-12">
-                                       <div id="wrapper"> 
-                                        <a href="grub.html" class="hide-mobile">
-                                            <div class="embed-responsive embed-responsive-16by9" >
-                                                <pause>
-                                                <video class="grub-vid hover"  playsinline muted loop >
-                                                    <source src="videos/Grub-Preview001.mp4" type="video/mp4">
-                                                </video>
-                                                    </pause>
-                                            </div>
-                                        </a>
-                                        
-                                        <a href="grub.html" class="hide-desktop hover" >
-                                            
-                                            <img src="img/GrubPreviewcopy.jpg" class="bg-light embed-responsive">
-                                            
-                                        </a>
-                                            <div class="justify-content-center align-text-bottom text-style-preview" ><p class="menu-mobile-sort-type regular text"><span>Grub</span>
-                                                <br>
-                                                <span>  food store app</span></p></div>
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            <div class="hideme container-fluid  " 
-                                 >
-                            
+<script src="script/script.js"></script>   
 
 
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Screen Motion radio2 option3 col-sm-9 col-12 ">
-                                    <div id="wrapper">
-                                        <a href="skint.html" class="hide-mobile" >
-                                            
-                                            <img src="videos/skintcopy.png" class="hover embed-responsive hide-mobile">
-                                            
-                                        </a>
-                                        
-                                        <a href="skint.html" class="hide-desktop" >
-                                            
-                                            <img src="videos/skintmobilecopy.jpg" class="hover embed-responsive">
-                                            
-                                        </a>
-                                    
-                                        <div class="justify-content-center align-text-bottom text-style-preview" >
-                                                
-                                            <p class="menu-mobile-sort-type home-lables regular text"><span>Skint</span>
-                                                <br>
-                                                <span>Film titles and ephemora</span></p>
-                                        </div>
-
-                
-                                    </div>
-                                        
-                                    </li>
-                                </div>
-                            </div>
-                               
-                         
-                            
-                           
-                            
-                            <div  class="container-fluid  "  >
-                                
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Screen radio2 option5 col-sm-9 col-12">
-                                        <div id="wrapper" > 
-                                        
-                                   
-                                        <a href="changingfutures.html" class=hide-mobile>
-                                            <div class="embed-responsive embed-responsive-16by9" >
-                                                <video class="grub-vid hover embed-responsive"  playsinline muted loop >
-                                                    <source src="videos/changingfuturespreview.mp4" type="video/mp4" class="embed-responsive">
-                                                </video>
-                                            </div>
-                                        </a>
-                                        
-                                        <a href="changingfutures.html" class="hide-desktop" >
-                                            <div class="" >
-                                                <video class="grub-vid hover embed-responsive embed-responsive-16by9"  playsinline muted loop >
-                                                        <source src="videos/changingfuturespreviewmobile.mp4" type="video/mp4" class="embed-responsive">
-                                                </video> 
-                                            </div>
-                                            
-                                            
-                                        </a>
-                                            <div class="justify-content-center align-text-bottom text-style-preview" ><p class="text menu-mobile-sort-type regular"><span>Changing Futures</span>
-                                                <br>
-                                                <span> Youth social welfare site</span></p></div>
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            <div  class="container-fluid  " 
-                                 >
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Editorial  radio2 option6 col-sm-9 col-12">
-                                         <div id="wrapper"> 
-                                        <a href="Archetype.html" class="hide-mobile hover" >
-                                            
-                                            <div class=" col-12 no-padding">
-                <img src="videos/archetypePreview.jpg" class="embed-responsive">
-            </div>
-                                            
-                                        </a>
-                                        
-                                        <a href="Archetype.html" class="hide-desktop hover" >
-                                            
-                                            <img src="videos/archetypePreviewmobile.jpg" class="embed-responsive">
-                                            
-                                        </a>
-                                        
-                                        <div class="justify-content-center align-text-bottom text-style-preview" >
-                                                
-                                            <p class="menu-mobile-sort-type home-lables regular text"><span>Archetype</span>
-                                                <br>
-                                                <span>Breaking typographic rules</span></p></div>
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-
-                            
-                            
-                            <div  class="container-fluid  ">
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Editorial radio2 option6 col-sm-9 col-12">
-                                        <div id="wrapper">
-                                        <a href="Nekrologue.html" class="hide-mobile hover" >
-                                            
-                                            <div class=" col-12 no-padding">
-                <img src="img/Nekrologue.png" class="embed-responsive">
-            </div>
-                                            
-                                        </a>
-                                            
-                                            
-                                        
-                                        <a href="Nekrologue.html" class="hide-desktop hover" >
-                                            
-                                            <img src="img/Nekrologuemobile.jpg" class="embed-responsive">
-                                            
-                                        </a>
-                                            <div class="justify-content-center align-text-bottom text-style-preview" ><p class="text menu-mobile-sort-type regular"><span>Karoshi</span>
-                                                <br>
-                                                <span>ISTD project</span></p></div>
-                                        
-                                        
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            <div  class="container-fluid  ">
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Editorial Motion radio2 option6 col-sm-9 col-12">
-                                        <div id="wrapper">
-                                        <a href="Banished.html" class="hide-mobile hover" >
-                                            
-                                            <div class=" col-12 no-padding">
-                <img src="img/Banished/hero%20image%20banished%20preview.jpg" class="embed-responsive">
-            </div>
-                                            
-                                        </a>
-                                            
-                                            
-                                        
-                                        <a href="Banished.html" class="hide-desktop hover" >
-                                            
-                                            <img src="img/Banished/hero%20image%20banished%20mobile.jpg" class="embed-responsive">
-                                            
-                                        </a>
-                                            <div class="justify-content-center align-text-bottom text-style-preview hide-desktop" ><p class="text menu-mobile-sort-type regular"><span>Banished</span>
-                                                <br>
-                                                <span>Opera poster</span></p></div>
-                                            
-                                            <div class="justify-content-center align-text-bottom text-style-preview hide-mobile" style="">
-                                                
-                                            <p class="text menu-mobile-sort-type home-lables regular"><span>Banished</span>
-                                                <br>
-                                                <span>Opera poster</span></p></div>
-                                        
-                                        
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            <div  class="container-fluid  ">
-                                <div class="row justify-content-center">
-                                    <li class="position-previews mix Motion radio2 option6 col-sm-9 col-12">
-                                        <div id="wrapper">
-                                        <a href="karoshii.html" class="hide-mobile hover" >
-                                            
-                                            <div class=" col-12 no-padding">
-                <img src="img/Nekrologue%20copy.png" class="embed-responsive">
-            </div>
-                                            
-                                        </a>
-                                            
-                                            
-                                        
-                                        <a href="karoshii.html" class="hide-desktop hover" >
-                                            
-                                            <img src="img/Nekrologuemobile%20copy.png" class="embed-responsive">
-                                            
-                                        </a>
-                                            <div class="justify-content-center align-text-bottom text-style-preview" style="">
-                                                
-                                            <p class="text menu-mobile-sort-type home-lables regular"><span>Nekrologue</span>
-                                                <br>
-                                                <span>Abstact motion</span></p></div>
-                                        
-                                        
-                                        
-                                        
-                                        </div>
-                                    </li>
-                                </div>
-                               
-                            </div>
-                            
-                            
-                           
-                            
-                            
-                            
-                            
-                            
-                            
-                    
-                            <li class="gap"></li>
-                            <li class="gap"></li>
-                            <li class="gap"></li>
-                        </ul>
-                            
-                        </div>
-                        
-                    </section> <!-- cd-gallery -->
-
-                </div>
-            
-        </div>
-    </div>
-    </div>
-    
-    
-   
-    
-    
-    <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-12 d-flex justify-content-center" style="margin-top: 100px; font-size: 16px;">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-12 d-flex justify-content-center">
-                       
-                    </div>
-                </div>
-    </div>
-    <div class="container-fluid bg-light no-padding ">
-            <div class="row">
-                <div class="offset-sm-2 offset-0 col-12 col-md-4 get-in-touch footer-typography" style="  margin-top: 100px;">
-                        <p>Get in touch</p>
-                </div>
-                <div class="offset-sm-1 offset-0 col-12 col-md-4 list-contact footer-typography">
-                    <a  href="mailto:tomgillandesign@gmail.com" class="contact">e-mail</a>
-                     <a href="https://www.instagram.com/tomgillandesign/?hl=en" class="contact">instagram</a>
-                     <a href="https://www.behance.net/TomGillan" class="contact">behance</a>
-                     <a href="https://www.linkedin.com/in/tom-gillan-a2a329158/" class="contact">linkedin</a>
-                    
-                </div>
-               
-            </div>
-          
-            
-            
-            
-            
-            
-            
-            
-            
-             <!-- cd-main-content -->
-            
-
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mixitup.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<script src="js/videohover.js"></script>
-            
-            
-    </div> 
-    
-    <!-- fade -->       
-            <script>var animateHTML = function() {
-  var elems;
-  var windowHeight;
-  function init() {
-    elems = document.querySelectorAll('.hidden');
-    windowHeight = window.innerHeight;
-    addEventHandlers();
-    checkPosition();
-  }
-  function addEventHandlers() {
-    window.addEventListener('scroll', checkPosition);
-    window.addEventListener('resize', init);
-  }
-  function checkPosition() {
-    for (var i = 0; i < elems.length; i++) {
-      var positionFromTop = elems[i].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight <= -150) {
-        elems[i].className = elems[i].className.replace(
-          'hidden',
-          'fade-in-element'
-        );
-      }
-    }
-  }
-  return {
-    init: init
-  };
-};
-                animateHTML().init();</script>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init({duriation:2000});
-</script>
-    
-    
-    </div>
-    
-    <style>
-    
-        .col-sm-9{max-width: 65%;
-        transition:1s;}
-        .col-sm-9:hover{
-            
-            max-width: 90%;
-            margin-top:6vw;
-            transition:ease-out 1.5s;
-        }
-        .col-sm-9:onclick{
-            
-            max-width: 100%;
-            transition-delay: 5s;
-            transition: ease-out 1.5s;
-        }
-        
-        @media only screen and (max-width: 600px) {
-           .col-sm-9{
-        max-width: 80%;
-        transition:1s;}
-        .col-sm-9:hover{
-            
-            max-width: 85%;
-            transition:ease-out 0.5s;
-        } 
-        }
-    
-    </style>
-
-           
-    
 </body>
 </html>
