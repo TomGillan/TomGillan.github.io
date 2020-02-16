@@ -1287,7 +1287,9 @@ width:calc(50vw-40px);
     .testme{min-height: 520px;}
 }
 
-
+video{
+    background-color: black;
+}
 
 
 @media only screen and (max-width: 600px) {
