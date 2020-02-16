@@ -920,6 +920,7 @@ progress::-moz-progress-bar {
 .margin-image{margin-left:10px; margin-right: 10px;}
 .margin-image2{margin-left:20px; margin-right: 20px;}
 
+.margin-image3{margin-left:20px; margin-right: 20px;}
 .right{ width: calc(100vw - 40px);
     margin-left: 20px;
     display: flex; 
@@ -1287,9 +1288,6 @@ width:calc(50vw-40px);
     .testme{min-height: 520px;}
 }
 
-video{
-    background-color: black;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -1326,6 +1324,8 @@ video{
 }
     
     .margin-image2{margin-left:10px; margin-right: 10px;}
+    
+    .margin-image3{margin-left:10px; margin-right: 10px;}
     
 .banishedvideo{
     display:flex;
