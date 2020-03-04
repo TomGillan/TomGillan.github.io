@@ -1991,6 +1991,16 @@ padding-right: 20px;}
 
 @media only screen and (min-width: 1800px) {
 
+        #header {
+	width: calc(40vw);
+}
+    #headerprofile{
+    width: calc(40vw);
+    }
     
-   
+    #nextproject{
+    width: calc(40vw + 30px);
+    }
+    
+   .text{ width:calc((100%) / 2.5 );}
 }
