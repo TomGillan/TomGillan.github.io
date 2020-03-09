@@ -122,8 +122,8 @@ $(window).on('scroll', function() {
         $('#hide').css({ 'visibility':"hidden"});
        }
 
-    function templebar(){ 
-        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Temple Bar Gallery (coming soon)";
+    function Bray(){ 
+        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Bray Wayfinding (coming soon)";
         $('#hide').css({ 'visibility':"hidden"});
        }
 
