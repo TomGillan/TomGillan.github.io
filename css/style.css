@@ -26,6 +26,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.nourishvideo{
+    width:calc(100vw - 60px); padding: 5vw 18vw; margin-left:10px; background-color: #D7D7D7;"
+}
 
 body {
 	overflow-x: hidden;
@@ -1931,6 +1934,10 @@ padding-right: 20px;}
 
 
 @media only screen and (max-width: 600px) {
+    
+    .nourishvideo{
+    width:calc(100vw - 40px); padding: 0vw 0vw; margin-left:10px; background-color: #D7D7D7;"
+}
     
     #projectservices{
     padding-bottom: 20px;
