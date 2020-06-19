@@ -110,7 +110,7 @@ $(window).on('scroll', function() {
         $('#hide').css({ 'visibility':"hidden"});
        }
     function changingfutures(){ 
-        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Changing Futures (coming soon)";
+        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Nourish and Flow Festival";
         $('#hide').css({ 'visibility':"hidden"});
        }
     function Banished(){ 
