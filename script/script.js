@@ -123,7 +123,7 @@ $(window).on('scroll', function() {
        }
 
     function Bray(){ 
-        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Private";
+        document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Requires password";
         $('#hide').css({ 'visibility':"hidden"});
        }
 
