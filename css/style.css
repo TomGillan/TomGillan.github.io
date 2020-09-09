@@ -1295,8 +1295,8 @@ border-radius: 30px;
 transition: 300ms;
 justify-content: center;
 align-items: center;
-margin-right:30px;
-margin-bottom:30px;
+right:60px!Important;
+bottom:30px!Important;
 
 
 }
@@ -1344,6 +1344,8 @@ opacity:1;
 @media only screen and (max-width: 600px) {
     button{
 display: none;
+right:40px!Important;
+bottom:20px !Important;
 } 
 
 .showreelclass:hover button{
