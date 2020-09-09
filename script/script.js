@@ -15,6 +15,25 @@ $(window).on('scroll', function() {
         };
 
 
+
+
+
+function toggleMute() {
+
+var video=document.getElementById("soundShowreel")
+
+if(video.muted){
+	video.muted = false;
+    document.getElementById("sound").innerHTML = "Mute";
+} else {
+	video.muted = true;
+    document.getElementById("sound").innerHTML = "Sound";
+
+}
+
+}
+
+
     $(document).ready(function() {
 
 	var getMax = function() {
@@ -75,13 +94,28 @@ $(window).on('scroll', function() {
 	}
 });
 
+
+
+
+
+
   function showreel(){
       if ( $(window).width() >= 600 ){
           document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Showreel";
           $('#hide').css({ 'visibility':"hidden"});
+
+     
+
       }else{
           document.getElementById("name").innerHTML = "<span class='w3-animate-opacity projectName'>Tom Gillan";
           $('#hide').css({ 'visibility':"visible"});
+
+
+
+
+
+
+
       } 
   }      
     

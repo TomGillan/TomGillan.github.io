@@ -66,6 +66,7 @@ alert("Password Incorrect");
     <div class="testme"></div>
      
 <!--    bio description-->
+
    
      <div id="showreel" class="animated slideInUp showreel ">
 <!--
@@ -73,14 +74,25 @@ alert("Password Incorrect");
             <span class="label ">Play</span>
         </div>
 -->
-        
-        <div onmouseover=showreel() onmouseout=normal()>
-             <video  style="width:100%;"  playsinline muted autoplay loop  name="media">
-                    <source src="img/reelprototype.mp4" type="video/mp4">
+       
+
+        <div class="showreelclass" style=" "onmouseover=showreel() onmouseout=normal()>
+             
+            <video  id='soundShowreel' style="width:100%;"  playsinline muted autoplay loop  name="media">
+                    <source src="img/soundshowreel.mp4" type="video/mp4">
             </video>
+            <button id="sound"onclick="toggleMute();">
+                Sound
+        </button>
         </div>
+        
+
          
     </div>
+
+
+
+   
     <div id="grid">
     
     
