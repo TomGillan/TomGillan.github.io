@@ -1279,7 +1279,8 @@ width:calc(50vw-40px);
 
 
 
-button{
+
+#sound{
 
 display: flex;
 position: absolute;
@@ -1300,6 +1301,7 @@ bottom:30px!Important;
 
 
 }
+
 .showreelclass{
     display: flex;
     justify-content: flex-end;
@@ -1342,7 +1344,7 @@ opacity:1;
 
 
 @media only screen and (max-width: 600px) {
-    button{
+    #sound{
 display: none;
 right:40px!Important;
 bottom:20px !Important;
