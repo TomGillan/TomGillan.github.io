@@ -1042,7 +1042,7 @@ footer-nav i {
 
 .top_header h1 a{
     opacity:0.45;
-    transition: 200ms;
+    transition-property: opacity 200ms;
 }
 
 .top_header h1 a:hover{ 
