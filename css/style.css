@@ -253,7 +253,7 @@ section{
 .project_header h5{
 
     max-width:612px;
-    margin:64px 24px 0px 24px;
+    margin:64px 24px 8px 24px;
 }
 
 .project_header .list{
@@ -1352,12 +1352,12 @@ padding-bottom:36px;
     margin:66px 40px 66px 16px;
 } 
 .card_text h5{
-    margin-bottom:4px;
+    margin-bottom:24px;
     font-size: 16px;
     line-height: 24px;
 }    
     
-.card_text h5{margin-bottom:8px;
+.card_text h5{margin-bottom:24px;
 }
 .card_text h2 {  margin-bottom:16px;
     }
