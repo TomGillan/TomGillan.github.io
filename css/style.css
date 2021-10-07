@@ -2,7 +2,7 @@
   /* Change highlight background color to black */
   background: #fcf113;
   /* Change highlight text color to red */
-  color: rgba(0,0,0,1)!Important;
+  color: black !Important;
 }
 
 .highlighted{
@@ -54,9 +54,9 @@ h4{
     letter-spacing: 0.2px;
 }
 h5{
-    font-family: 'halyard-text', sans-serif;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1.4px;
@@ -77,21 +77,19 @@ p{  font-family: 'adelle', serif;
     letter-spacing: 0.2px;
 }
 nav a {
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    opacity: .54;
     color: black;
 }
 
 
 .card_button{
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
+    font-weight: 300;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -101,8 +99,8 @@ nav a {
     opacity: 1;
 }
 .header_button{
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
+    opacity: 1;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -111,8 +109,7 @@ nav a {
     
 }
 footer a{
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -124,19 +121,18 @@ footer a{
     display: flex;
     align-items: center;
     margin-left:12px;
-    max-width: 1440px;
+    max-width: 1800px;
 }
 footer a:hover{
     opacity: 1;
 }
 .details_text{
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
-    cursor: default;
+    cursor: #2D1A00;
 }
 
 
@@ -147,8 +143,7 @@ footer a:hover{
     font-weight: 600;
 }
 .small_text{
-    font-family: 'hayard-text', sans-serif;
-    letter-spacing: 0.6px;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -168,11 +163,11 @@ footer{color:white;}
 
 footer a:-webkit-any-link{color:white;}
 
-.background_1{background-color: #FBFBF9;}
+.background_1{background-color: #FDFDFC;}
 .background_2{background-color: #EEEFEC;}
 .background_3{background-color: #E2E2DF;}
-.background_4{background-color: #181A1B;}
-.background_5{background-color: #1D1F21;}
+.background_4{background-color: #1A1A1A;}
+.background_5{background-color: #111111;}
 /*Nav*/
 nav{
     padding: 16px 12px 0px 12px;
@@ -228,7 +223,13 @@ section{
     width:100%;
     display:flex;
     flex-direction: column;
-    max-width: 1440px;
+    max-width: 1800px;
+}
+
+magicsection{
+    width:100%;
+    display:flex;
+    flex-direction: column;
 }
 
 .full{
@@ -239,7 +240,8 @@ section{
 }
 .top_header{
     display: flex;
-    flex-direction:column;    
+    flex-direction:column;   
+    min-height: 80vh;
 }
 .top_header h1{
     margin: 80px 24px 80px 24px;
@@ -278,7 +280,6 @@ section{
     padding-left:12px;
     margin-left: 12px;
     margin-bottom: 32px;
-    opacity:0.54;
     transition-property: opacity;
     transition-duration: 200ms;
     font-size: 16px;
@@ -303,6 +304,27 @@ a{text-decoration: none;}
     background-image:url(../img/arowdownblack.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    transform: rotate(-45deg);
+}
+
+.arrow_upright_black{
+    display: inline-block;
+    width:48px;
+    height:48px;
+    margin:0px;
+    background-image:url(../img/arowdownblack.svg);
+    transform: rotate(-135deg) translate(-8px, -8px);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.underline-link{
+    display:inline-block;
+    border-bottom: 2px solid black;
+}
+
+.underline-link:hover{
+    display:inline-block;
+    border-bottom: 0px solid black;
 }
 .arrow_down_white{
     width:24px;
@@ -311,6 +333,7 @@ a{text-decoration: none;}
     background-image:url(../img/arowdownwhite.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    transform: rotate(-45deg);
 }
 
 .top_section{padding:16px 0px 24px 0px;}
@@ -339,8 +362,9 @@ a{text-decoration: none;}
 .card_image{
     margin:24px 24px 8px 24px;
     border-radius: 16px;
-    height: 300px;
-    overflow: hidden !Important;
+    height: 50vw;
+    min-height: 300px;
+    overflow: hidden!Important;
 }
 .portrait{
     min-height: 234px;
@@ -387,7 +411,7 @@ a{text-decoration: none;}
 
 .card:hover .cardbgimage  {
     transition-property: transform;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 400ms;
     transition-timing-function: ease;
     border: 16px;
@@ -401,7 +425,7 @@ a{text-decoration: none;}
     flex-direction:column;
     width:auto;
     display: flex;
-    padding:8px 24px 24px  24px;
+    padding:24px 24px 64px  24px;
 }
 
 .aboutme_text{
@@ -433,10 +457,10 @@ a{text-decoration: none;}
 
 
 .card_text h5{
-    margin-bottom:4px;
+    margin-bottom:16px;
 }
 .card_text h2 {  margin-bottom:12px;}
-.card_text h4 {opacity:0.54;}
+.card_text h4 {opacity:0.7;}
 
 .card_button h4{
     font-size: 16px;
@@ -476,13 +500,12 @@ a{text-decoration: none;}
 
 .card:hover{
     background-color: white;
-    box-shadow: 0px 16px 32px rgba(4,5,79,.1);
     transition-property: background-color;
     transition-duration: 200ms;
 }
 
 .white_text .card:hover{
-background-color: rgba(255,255,255,0.06);   
+background-color: rgba(255,255,255,0.00);   
 }
 
 .card:hover .arrow_right{
@@ -688,7 +711,7 @@ margin-bottom:24px;
 
 .max-12{
     width: calc(100% - 0px);
-    max-width:calc(1440px - 136px);
+    max-width:calc(1800px - 136px);
     display: flex;
     flex-direction: column;
 }
@@ -999,7 +1022,7 @@ a .card, a card_text, a h4, a h2, a h5{
 }
 
 footer h5{
-    font-family: 'Dm sans', sans-serif;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -1050,12 +1073,12 @@ footer-nav i {
 }
 
 .top_header h1 a{
-    opacity:0.45;
+    color: black;
     transition-property: opacity 200ms;
 }
 
 .top_header h1 a:hover{ 
-    opacity:0.25;  
+    opacity:0.5;  
 }
 
 .background_4 .remove{
@@ -1076,6 +1099,20 @@ iframe{
 
 @media only screen and (min-width: 756px){
     
+    .aboutlistanimation{
+        margin-left:16px!Important;
+    }
+    .card{
+    flex-direction: column;
+    }
+    .card_image{
+    margin:24px 24px -28px 24px;
+    border-radius: 16px;
+    height: 40vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+    
 iframe{
     border:0px;
     width:100%; 
@@ -1093,7 +1130,7 @@ padding-bottom:36px;
 }
     
 .top_header{
-    min-height: 70vh;
+    min-height: 80vh;
     }
     
     footer-nav{
@@ -1216,7 +1253,7 @@ padding-bottom:36px;
     
 .max-12{
     width: calc(100% - 24px);
-    max-width:calc(1440px - 112px);
+    max-width:calc(1800px - 112px);
     
 }
     
@@ -1318,20 +1355,7 @@ padding-bottom:36px;
     }
     
     
-    .card{
-    flex-direction: row;
-    padding:0px;
-    margin:12px 48px 12px 48px;
-    border-radius: 32px;
-    padding:16px;
-}
 
-.card_image{
-    height: 400px;
-    width: 50%;
-    border-radius: 16px;
-    margin:16px 40px 16px 16px;
-}
     .homecard1{
         border-radius: 16px;
     }
@@ -1340,10 +1364,26 @@ padding-bottom:36px;
     flex-direction:column;
     display: flex;
     width: 50%;
-    margin:66px 40px 66px 16px;
+    max-width: 600px;
+    min-width: 300px;
+    margin:66px 60px 66px 0px;
 } 
+    .card_text_about{
+      margin:66px 40px 66px 16px;
+    flex-direction:column;
+    display: flex;
+    width: 50%;
+    padding: 24px;
+    }
+    
+   
+    .card_text_about h4{
+        max-width: 680px;
+    }
 
-
+    .this .card_text_about h4{
+        opacity: 0.7;
+    }
     
 .card_text top_section_2{
     flex-direction:column;
@@ -1400,6 +1440,8 @@ padding-bottom:36px;
     width: 50%;
     border-radius: 16px;
     margin:0px 40px 0px 16px;
+    filter: contrast(1.4);
+    mix-blend-mode:screen;
     }
     
 
@@ -1433,12 +1475,11 @@ h4{ font-size: 18px;
     line-height: 1.5;
 }
 nav a {
-    font-family: 'Dm sans', serif;
+    font-family: 'courier-std', monospace;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    opacity: .54;
     color: black;
 }
     
@@ -1462,7 +1503,7 @@ width:calc(100% - 128px);
 }
 .top_header h1{
     margin: 120px 80px 116px 80px;
-    max-width: 1100px;
+    max-width: 70vw;
 }
     .project_header{
         display: flex;
@@ -1573,12 +1614,39 @@ footer .section_title{margin-left: 24px; margin-bottom:0px;}
     
     @media only screen and (min-width: 1200px){
         
+        .btmspc{
+            padding-bottom: 20vh;
+        }
+        
+        .card{
+    flex-direction: row-reverse;
+    padding:0px;
+    margin:48px;
+    margin-top: 20vh;
+    border-radius: 32px;
+    padding:0px;
+    justify-content: space-around;
+}
+        
+.card_image{
+    height: 60vh;
+    max-height: 800px;
+    width: 100%;
+    border-radius: 16px;
+    margin:16px 40px 16px 16px;
+    overflow: visible!Important;
+}
+        
+        .about-top{
+            margin-top:15vh;
+        }
+    
         p{
             font-size:  24px;
             line-height: 40px;
         }
         h1{
-            font-size:  48px;
+            font-size:  3.25vw;
         }
         h2{
              font-size:  38px;
