@@ -19,8 +19,8 @@ body{
 }
 /*text*/
 h1{
-    font-family: 'Lora', serif;
-    font-weight: 400;
+    font-family: 'portada', serif;
+    font-weight: 300;
     font-size: 28px;
     line-height: 1.4;
     cursor: default;
@@ -28,15 +28,15 @@ h1{
     margin: 0px;
     padding:0px;
 }
-h2{ font-family: 'Lora', serif;
-    font-weight: 400;
+h2{ font-family: 'portada', serif;
+    font-weight: 300;
     font-size: 22px;
     line-height: 1.35;
     margin: 0px;
     padding:0px;
 }
-h3{ font-family: 'Lora', serif;
-    font-weight: 400;
+h3{ font-family: 'portada', serif;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.54;
     margin: 0px;
@@ -44,16 +44,17 @@ h3{ font-family: 'Lora', serif;
     
 }
 h4{
-    font-family: 'Dm sans', sans-serif;
+    font-family: 'adelle', sans-serif;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 27px;
     margin: 0px;
     padding:0px;
+    letter-spacing: 0.2px;
 }
 h5{
-    font-family: 'Dm sans', sans-serif;
+    font-family: 'halyard-text', sans-serif;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -64,15 +65,16 @@ h5{
     margin: 0px;
     padding:0px;
 }
-p{  font-family: 'Dm sans', serif;
+p{  font-family: 'adelle', serif;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 29px;
     cursor: default;
     margin: 0px;
     padding:0px;
-    opacity: 0.8;
+    opacity: 0.93;
+    letter-spacing: 0.2px;
 }
 nav a {
     font-family: 'Dm sans', serif;
@@ -1036,7 +1038,7 @@ footer-nav i {
 }
 
 .top_header{
-    max-height: 800px!Important;
+    
     justify-content: space-between;
 }
 
@@ -1084,7 +1086,7 @@ padding-bottom:36px;
 }
     
 .top_header{
-    min-height: 0vh;
+    min-height: 70vh;
     }
     
     footer-nav{
