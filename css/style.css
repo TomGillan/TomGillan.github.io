@@ -77,7 +77,8 @@ p{  font-family: 'adelle', serif;
     letter-spacing: 0.2px;
 }
 nav a {
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -88,7 +89,8 @@ nav a {
 
 
 .card_button{
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -99,15 +101,18 @@ nav a {
     opacity: 1;
 }
 .header_button{
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: black;
+    
 }
 footer a{
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -125,7 +130,8 @@ footer a:hover{
     opacity: 1;
 }
 .details_text{
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -141,7 +147,8 @@ footer a:hover{
     font-weight: 600;
 }
 .small_text{
-    font-family: 'Dm sans', serif;
+    font-family: 'hayard-text', sans-serif;
+    letter-spacing: 0.6px;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
