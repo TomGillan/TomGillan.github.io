@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/ild8ypj.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img  src="img/scroll-to-top_white.svg" ></button>
@@ -23,10 +24,12 @@
                 <a class="nav-link active " href="index.html"><div>Work</div><i class="dark"></i></a>
                 <a class=" nav-link" href="about.html" style="margin-left:16px;"><div>About</div></a>
             </nav>
-            <h1 style="margin-top:7.5vw;">Hi I’m Tom Gillan, an&nbsp;empathy driven user&nbsp;experience designer based in Dublin. You&nbsp;can&nbsp;contact me on <a href="https://www.linkedin.com/in/tom-gillan-a2a329158/?originalSubdomain=ie"><div class="underline-link">linkedin</div></a>&nbsp;or&nbsp;<a href="mailto:tomgillandesign@gmail.com"><div class="underline-link">email</div>.<span class="arrow_down_black"></span></a>           
+            <h1  data-aos="fade-up" data-aos-easing="ease-out-cubic
+" data-aos-duration="1000"  style="margin-top:7.5vw;">Hi I’m Tom Gillan, an&nbsp;empathy driven user&nbsp;experience designer based in Dublin. You&nbsp;can&nbsp;contact me on <a href="https://www.linkedin.com/in/tom-gillan-a2a329158/?originalSubdomain=ie"><div class="underline-link">linkedin</div></a>&nbsp;or&nbsp;<a href="mailto:tomgillandesign@gmail.com"><div class="underline-link">email</div>.<span class="arrow_down_black"></span></a>           
 
             </h1></div> 
-            <a href="#selectedwork" class="header_button">
+            <a href="#selectedwork" class="header_button" data-aos="fade-in" data-aos-easing="ease-out-cubic
+" data-aos-delay="500" data-aos-duration="1000">
                 <div>Selected work</div>
                 <div class="arrow_down_black"></div>
             </a>
@@ -34,7 +37,7 @@
         <div class="background_4 full white_text btmspc">
         <section class="top_section background_4 white_text" id="selectedwork">
             <a href="rte_player.html" class="card">
-                <div class="card_image">
+                <div class="card_image" >
                     <div class="card1 cardbgimage"></div>
                     
                 </div>
@@ -231,4 +234,9 @@ alert("Password Incorrect");
 
     </body>
     <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+ 
     </html>

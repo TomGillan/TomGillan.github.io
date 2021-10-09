@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/ild8ypj.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body class="background_4">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img  src="img/scroll-to-top_white.svg" ></button>
@@ -19,19 +20,23 @@
                 <a class="nav-link  " href="index.html"><div>Work</div>
                 <a class=" nav-link active" href="about.html" style="margin-left:16px;"><div>About</div><i class="black"></i></a></a>
             </nav>
-            <h1 style="margin-top:7.5vw;">My greatest asset is my inquisitive nature. Curiosity&nbsp;fuels my thinking and approach to&nbsp;design.</h1></div> 
-            <a href="#aboutme" class="header_button">
+            <h1 data-aos="fade-up" data-aos-easing="ease-out-cubic
+" data-aos-duration="1000" >My greatest asset is my inquisitive nature. Curiosity&nbsp;fuels my thinking and approach to&nbsp;design.</h1></div> 
+            <a href="#aboutme" class="header_button" data-aos="fade-in" data-aos-easing="ease-out-cubic
+" data-aos-delay="500" data-aos-duration="1000">
                 <div>About me</div>
-                <div class="arrow_down_black"></div>
+                <div class="arrow_down_black" ></div>
             </a>
             </magicsection></div>
         <div class="background_4 full white_text"><section class="about-top top_section remove background_4" id="aboutme">
             <div class="aboutme" style="margin-bottom: 10vh;">
-                <div class="portrait">
-                    <img src="img/portraitimage.jpg" alt="Portrait of Tom Gillan on the beach">
+                <div  class="portrait" >
+                    <img data-aos="fade-in" data-aos-easing="ease-out-cubic
+"  data-aos-duration="1000" src="img/portraitimage.jpg" alt="Portrait of Tom Gillan on the beach">
                 </div>
-                <div class="aboutme_text" >
-                    <p>
+                <div class="aboutme_text" data-aos="fade-up" data-aos-easing="ease-out-cubic
+"  data-aos-duration="1000" data-aos-offset="300">
+                    <p >
                         Currently, I’m working as a designer at New Graphic, where I focus on UX and UI design as well as research, brand, and motion&nbsp;design.<br><br>
 
 My experience working in design studios has exposed me to various working methods and enabled me to create exceptional user-centred design in fast-paced environments. Empathy is key to my approach; understanding user and strategic goals are central to my&nbsp;work.<br><br>
@@ -54,7 +59,7 @@ I am passionate about design and how it can improve lives. I enjoy a challenge a
                         <source src="img/research.mp4" type="video/mp4">
                         </video>
                     </div>
-                <div class="card_text_about">
+                <div class="card_text_about" >
                     <div class="card_text_top">
                         <h5>Step 1</h5>
                         <h2>Research and empathize</h2>
@@ -68,7 +73,7 @@ I am passionate about design and how it can improve lives. I enjoy a challenge a
                         <source src="img/innovation.mp4" type="video/mp4">
                         </video>                        
                     </div>
-                    <div class="card_text_about">
+                    <div class="card_text_about" >
                         <div class="card_text_top">
                             <h5>Step 2</h5>
                             <h2>Innovate and design</h2>
@@ -199,4 +204,8 @@ Graphic design Intern<br>
         </div>
     </body>
         <script src="script/script_2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     </html>

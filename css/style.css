@@ -1057,7 +1057,8 @@ footer h5{
 }
 
 .approachanimation{
-    filter: brightness(0.85);
+    filter: brightness(80%) contrast(150%) ;
+    mix-blend-mode:lighten;
 }
 
 footer-nav{
@@ -1454,8 +1455,6 @@ padding-bottom:36px;
     width: 50%;
     border-radius: 16px;
     margin:0px 40px 0px 16px;
-    filter: contrast(140%);
-    mix-blend-mode:difference;
     }
     
 
