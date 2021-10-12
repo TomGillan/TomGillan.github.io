@@ -693,6 +693,10 @@ margin-bottom:24px;
     margin-top: 44px;
 }
 
+.project_text_block h2{
+    font-weight: 400;
+}
+
 .project_image_block{
     display: flex;
     flex-direction: column;
