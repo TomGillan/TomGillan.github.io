@@ -363,7 +363,7 @@ a{text-decoration: none;}
     margin:24px 24px 8px 24px;
     border-radius: 16px;
     height: 50vw;
-    min-height: 300px;
+    min-height: 70vw;
     overflow: hidden!Important;
 }
 .portrait{
@@ -379,17 +379,17 @@ a{text-decoration: none;}
 
 
 
-.cardardan{background-image: url(../img/Ardanheader.jpg);}
-.cardheritage{background-image: url(../img/heritage-ireland-app-mockup.jpg);}
-.card1{background-image: url(../img/RET_Plyer_thumbnail.jpg);}
-.card2{background-image: url(../img/Microsoft-teams-thumbnail.jpg);}
-.card3{background-image: url(../img/supportfinder_thumbnail.jpg);}
-.card4{background-image: url(../img/asos-thumbnail.jpg);}
-.card5{background-image: url(../img/kara_thumbnail.png);}
-.card6{background-image: url(../img/feed-thumb.png);}
-.card7{background-image: url(../img/motyf-hero.png);}
-.card8{background-image: url(../img/vault.png);}
-.card9{background-image: url(../img/Nourish%20and%20flow.png);}
+.cardardan{background-image: url(../img/Ardanheader.jpg);background-position: center;}
+.cardheritage{background-image: url(../img/heritage-ireland-app-mockup.jpg);background-position: center;}
+.card1{background-image: url(../img/RET_Plyer_thumbnail.jpg);background-position: center;}
+.card2{background-image: url(../img/Microsoft-teams-thumbnail.jpg);background-position: center;}
+.card3{background-image: url(../img/supportfinder_thumbnail.jpg);background-position: center;}
+.card4{background-image: url(../img/asos-thumbnail.jpg);background-position: center;}
+.card5{background-image: url(../img/kara_thumbnail.png);background-position: center;}
+.card6{background-image: url(../img/feed-thumb.png);background-position: center;}
+.card7{background-image: url(../img/motyf-hero.png);background-position: center;}
+.card8{background-image: url(../img/vault.png);background-position: center;}
+.card9{background-image: url(../img/Nourish%20and%20flow.png);background-position: center;}
 
 
 .cardbgimage{
